@@ -37,13 +37,19 @@ module.exports = {
   
   'test .underscore' : function ( callback ){
     inflection.underscore( 'MessageProperties' ).should.equal( 'message_properties' );
-    inflection.underscore( 'messageProperties', true ).should.equal( 'message_properties' );
+    inflection.underscore( 'messageProperties' ).should.equal( 'message_properties' );
     callback();
   },
   
   'test .humanize' : function ( callback ){
     inflection.humanize( 'message_properties' ).should.equal( 'Message properties' );
     inflection.humanize( 'message_properties', true ).should.equal( 'message properties' );
+    callback();
+  },
+  
+  'test .capitalize' : function ( callback ){
+    inflection.capitalize( 'message_properties' ).should.equal( 'Message_properties' );
+    inflection.capitalize( 'message properties' ).should.equal( 'Message properties' );
     callback();
   },
   
