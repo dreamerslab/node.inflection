@@ -1,7 +1,14 @@
+## 1.1.1 / 2012-02-13
+
+  - [update packages] node.flow->v1.1.0
+
+
+
 ## 1.1.0 / 2012-02-13
 
-  - Update devDependencies [node.flow] to v1.0.0
-  - Read version number from package.json
+  - [update packages] node.flow->v1.0.0
+  - [refactoring] Read version number from package.json
+
 
 
 ## 1.0.0 / 2012-02-08
@@ -9,7 +16,7 @@
   - Remove make file
   - Add pluralize rules
   - Add pluralize tests
-  - Use object.jey instead of for in
+  - [refactoring] Use object.jey instead of for in
 
 
 
