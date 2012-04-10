@@ -1,6 +1,6 @@
 {
   "name"       : "inflection",
-  "version"    : "1.1.1",
+  "version"    : "1.1.2",
   "description": "A port of inflection-js to node.js module",
   "keywords"   : [
     "inflection", "inflections", "inflection-js", "pluralize" , "singularize",
@@ -13,7 +13,7 @@
     "node.flow": "1.1.0",
     "should"   : "0.5.1"
   },
-  "main"      : "index",
+  "main"      : "./lib/inflection.js",
   "repository": {
     "type": "git",
     "url" : "https://github.com/dreamerslab/node.inflection.git"
