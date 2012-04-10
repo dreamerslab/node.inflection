@@ -373,6 +373,7 @@ This function adds ordinalize support to every String object.
 ## Credit
 
 - Ryan Schuft <ryan.schuft@gmail.com>
+- Lance Pollard <lancejpollard@gmail.com> (Browser support)
 
 
 
