@@ -1,3 +1,10 @@
+## 1.2.0 / 2012-04-10
+
+  - [new feature] Browser support
+  - [update packages] node.flow->v1.1.1
+
+
+
 ## 1.1.1 / 2012-02-13
 
   - [update packages] node.flow->v1.1.0
