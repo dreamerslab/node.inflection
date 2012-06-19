@@ -11,7 +11,7 @@
   "dependencies"   : {},
   "devDependencies": {
     "node.flow": "1.1.1",
-    "should"   : "0.5.1"
+    "should"   : "0.6.3"
   },
   "main"      : "./lib/inflection.js",
   "repository": {
@@ -19,5 +19,8 @@
     "url" : "https://github.com/dreamerslab/node.inflection.git"
   },
   "engines" : [ "node >= 0.4.0" ],
-  "license" : "MIT"
+  "licenses": [{
+    "type": "MIT",
+    "url" : "http://en.wikipedia.org/wiki/MIT_License"
+  }]
 }
