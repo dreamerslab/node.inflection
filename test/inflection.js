@@ -24,6 +24,7 @@ module.exports = {
   },
 
   'test .singularize' : function ( callback ){
+    inflection.singularize( 'address' ).should.equal( 'address' );
     inflection.singularize( 'person' ).should.equal( 'person' );
     inflection.singularize( 'people' ).should.equal( 'person' );
     inflection.singularize( 'octopi' ).should.equal( 'octopus' );
@@ -74,7 +75,7 @@ module.exports = {
   },
 
   'test .tableize' : function ( callback ){
-    // inflection.tableize( 'people' ).should.equal( 'people' );
+    inflection.tableize( 'people' ).should.equal( 'people' );
     inflection.tableize( 'MessageBusProperty' ).should.equal( 'message_bus_properties' );
     callback();
   },
