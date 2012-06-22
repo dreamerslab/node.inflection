@@ -1,3 +1,9 @@
+## 1.2.1 / 2012-06-22
+
+  - [bug fix] Singularize `address` produces `addres`
+
+
+
 ## 1.2.0 / 2012-04-10
 
   - [new feature] Browser support
