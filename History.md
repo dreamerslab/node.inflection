@@ -1,5 +1,12 @@
 # History
 
+## 1.2.3 / 2012-08-02
+
+- [bug fix] Singularize `status` produces `statu`
+- [update packages] should->v1.1.0
+
+
+
 ## 1.2.2 / 2012-07-23
 
 - [update packages] node.flow->v1.1.3 & should->v1.0.0
