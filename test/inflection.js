@@ -24,6 +24,9 @@ module.exports = {
   },
 
   'test .singularize' : function ( callback ){
+    inflection.singularize( 'status' ).should.equal( 'status' );
+    inflection.singularize( 'child' ).should.equal( 'child' );
+    inflection.singularize( 'children' ).should.equal( 'child' );
     inflection.singularize( 'address' ).should.equal( 'address' );
     inflection.singularize( 'person' ).should.equal( 'person' );
     inflection.singularize( 'people' ).should.equal( 'person' );
