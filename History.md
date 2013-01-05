@@ -1,5 +1,11 @@
 # History
 
+## 1.2.4 / 2013-01-06
+
+- [bug fix] window obj does not have `call` method
+
+
+
 ## 1.2.3 / 2012-08-02
 
 - [bug fix] Singularize `status` produces `statu`
