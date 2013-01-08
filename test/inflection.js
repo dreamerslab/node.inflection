@@ -45,6 +45,8 @@ module.exports = {
   'test .underscore' : function ( callback ){
     inflection.underscore( 'MessageProperties' ).should.equal( 'message_properties' );
     inflection.underscore( 'messageProperties' ).should.equal( 'message_properties' );
+    inflection.underscore( 'MP' ).should.equal( 'm_p' );
+    inflection.underscore( 'MP', true ).should.equal( 'MP' );
     callback();
   },
 
