@@ -1,6 +1,6 @@
 {
   "name"       : "inflection",
-  "version"    : "1.2.4",
+  "version"    : "1.2.5",
   "description": "A port of inflection-js to node.js module",
   "keywords"   : [
     "inflection", "inflections", "inflection-js", "pluralize" , "singularize",
@@ -11,7 +11,9 @@
   "contributors": [
     { "name": "Ryan Schuft", "email": "ryan.schuft@gmail.com" },
     { "name": "Ben Lin", "email": "ben@dreamerslab.com" },
-    { "name": "Lance Pollard", "email": "lancejpollard@gmail.com" }
+    { "name": "Lance Pollard", "email": "lancejpollard@gmail.com" },
+    { "name": "brandondewitt" }
+
   ],
   "dependencies"   : {},
   "devDependencies": {

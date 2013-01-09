@@ -1,5 +1,11 @@
 # History
 
+## 1.2.5 / 2013-01-09
+
+- [refactoring] Allow all caps strings to be returned from underscore
+
+
+
 ## 1.2.4 / 2013-01-06
 
 - [bug fix] window obj does not have `call` method
