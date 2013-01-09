@@ -19,7 +19,7 @@ Checkout `package.json` for dependencies.
 
 Install inflection through npm
 
-    npm install inflection
+	npm install inflection
 
 
 
@@ -29,7 +29,7 @@ Install inflection through npm
 - inflection.pluralize( str, plural );
 - inflection.singularize( str, singular );
 - inflection.camelize( str, lowFirstLetter );
-- inflection.underscore( str );
+- inflection.underscore( str, allUpperCase );
 - inflection.humanize( str, lowFirstLetter );
 - inflection.capitalize( str );
 - inflection.dasherize( str );
@@ -46,7 +46,7 @@ Install inflection through npm
 
 > Require the module before using
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
 
 
@@ -58,30 +58,30 @@ This lets us detect if an Array contains a given element.
 
 > arr
 
-    type: Array
-    desc: The subject array.
+	type: Array
+	desc: The subject array.
 
 > item
 
-    type: Object
-    desc: Object to locate in the Array.
+	type: Object
+	desc: Object to locate in the Array.
 
 > fromIndex
 
-    type: Number
-    desc: Starts checking from this position in the Array.(optional)
+	type: Number
+	desc: Starts checking from this position in the Array.(optional)
 
 > compareFunc
 
-    type: Function
-    desc: Function used to compare Array item vs passed item.(optional)
+	type: Function
+	desc: Function used to compare Array item vs passed item.(optional)
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.indexOf([ 'hi','there' ], 'guys' ); // === -1
-    inflection.indexOf([ 'hi','there' ], 'hi' ); // === 0
+	inflection.indexOf([ 'hi','there' ], 'guys' ); // === -1
+	inflection.indexOf([ 'hi','there' ], 'hi' ); // === 0
 
 
 
@@ -93,22 +93,22 @@ This function adds pluralization support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 > plural
 
-    type: String
-    desc: Overrides normal output with said String.(optional)
+	type: String
+	desc: Overrides normal output with said String.(optional)
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.pluralize( 'person' ); // === 'people'
-    inflection.pluralize( 'octopus' ); // === "octopi"
-    inflection.pluralize( 'Hat' ); // === 'Hats'
-    inflection.pluralize( 'person', 'guys' ); // === 'guys'
+	inflection.pluralize( 'person' ); // === 'people'
+	inflection.pluralize( 'octopus' ); // === "octopi"
+	inflection.pluralize( 'Hat' ); // === 'Hats'
+	inflection.pluralize( 'person', 'guys' ); // === 'guys'
 
 
 
@@ -120,22 +120,22 @@ This function adds singularization support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 > singular
 
-    type: String
-    desc: Overrides normal output with said String.(optional)
+	type: String
+	desc: Overrides normal output with said String.(optional)
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.singularize( 'people' ); // === 'person'
-    inflection.singularize( 'octopi' ); // === "octopus"
-    inflection.singularize( 'Hats' ); // === 'Hat'
-    inflection.singularize( 'guys', 'person' ); // === 'person'
+	inflection.singularize( 'people' ); // === 'person'
+	inflection.singularize( 'octopi' ); // === "octopus"
+	inflection.singularize( 'Hats' ); // === 'Hat'
+	inflection.singularize( 'guys', 'person' ); // === 'person'
 
 
 
@@ -147,24 +147,24 @@ This function adds camelization support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 > lowFirstLetter
 
-    type: Boolean
-    desc: Default is to capitalize the first letter of the results. Passing true will lowercase it. (optional)
+	type: Boolean
+	desc: Default is to capitalize the first letter of the results. Passing true will lowercase it. (optional)
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.camelize( 'message_properties' ); // === 'MessageProperties'
-    inflection.camelize( 'message_properties', true ); // === 'messageProperties'
+	inflection.camelize( 'message_properties' ); // === 'MessageProperties'
+	inflection.camelize( 'message_properties', true ); // === 'messageProperties'
 
 
 
-### inflection.underscore( str );
+### inflection.underscore( str, allUpperCase );
 
 This function adds underscore support to every String object.
 
@@ -172,15 +172,24 @@ This function adds underscore support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
+
+> allUpperCase
+
+	type: Boolean
+	desc: Default is to lowercase and add underscore prefix
+
+
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.underscore( 'MessageProperties' ); // === 'message_properties'
-    inflection.underscore( 'messageProperties' ); // === 'message_properties'
+	inflection.underscore( 'MessageProperties' ); // === 'message_properties'
+	inflection.underscore( 'messageProperties' ); // === 'message_properties'
+	inflection.underscore( 'MP' ); // === 'm_p'
+	inflection.underscore( 'MP', true ); // === 'MP'
 
 
 
@@ -192,20 +201,20 @@ This function adds humanize support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 > lowFirstLetter
 
-    type: Boolean
-    desc: Default is to capitalize the first letter of the results. Passing true will lowercase it. (optional)
+	type: Boolean
+	desc: Default is to capitalize the first letter of the results. Passing true will lowercase it. (optional)
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.humanize( 'message_properties' ); // === 'Message properties'
-    inflection.humanize( 'message_properties', true ); // === 'message properties'
+	inflection.humanize( 'message_properties' ); // === 'Message properties'
+	inflection.humanize( 'message_properties', true ); // === 'message properties'
 
 
 
@@ -217,15 +226,15 @@ This function adds capitalization support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.capitalize( 'message_properties' ); // === 'Message_properties'
-    inflection.capitalize( 'message properties', true ); // === 'Message properties'
+	inflection.capitalize( 'message_properties' ); // === 'Message_properties'
+	inflection.capitalize( 'message properties', true ); // === 'Message properties'
 
 
 
@@ -237,15 +246,15 @@ This function adds dasherization support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.dasherize( 'message_properties' ); // === 'message-properties'
-    inflection.dasherize( 'Message Properties' ); // === 'Message-Properties'
+	inflection.dasherize( 'message_properties' ); // === 'message-properties'
+	inflection.dasherize( 'Message Properties' ); // === 'Message-Properties'
 
 
 
@@ -257,15 +266,15 @@ This function adds titleize support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.titleize( 'message_properties' ); // === 'Message Properties'
-    inflection.titleize( 'message properties to keep' ); // === 'Message Properties to Keep'
+	inflection.titleize( 'message_properties' ); // === 'Message Properties'
+	inflection.titleize( 'message properties to keep' ); // === 'Message Properties to Keep'
 
 
 
@@ -277,14 +286,14 @@ This function adds demodulize support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.demodulize( 'Message::Bus::Properties' ); // === 'Properties'
+	inflection.demodulize( 'Message::Bus::Properties' ); // === 'Properties'
 
 
 
@@ -296,14 +305,14 @@ This function adds tableize support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.tableize( 'MessageBusProperty' ); // === 'message_bus_properties'
+	inflection.tableize( 'MessageBusProperty' ); // === 'message_bus_properties'
 
 
 
@@ -315,14 +324,14 @@ This function adds classification support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.classify( 'message_bus_properties' ); // === 'MessageBusProperty'
+	inflection.classify( 'message_bus_properties' ); // === 'MessageBusProperty'
 
 
 
@@ -334,20 +343,20 @@ This function adds foreign key support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 > lowFirstLetter
 
-    type: Boolean
-    desc: Default is to seperate id with an underbar at the end of the class name, you can pass true to skip it.(optional)
+	type: Boolean
+	desc: Default is to seperate id with an underbar at the end of the class name, you can pass true to skip it.(optional)
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.foreign_key( 'MessageBusProperty' ); // === 'message_bus_property_id'
-    inflection.foreign_key( 'MessageBusProperty', true ); // === 'message_bus_propertyid'
+	inflection.foreign_key( 'MessageBusProperty' ); // === 'message_bus_property_id'
+	inflection.foreign_key( 'MessageBusProperty', true ); // === 'message_bus_propertyid'
 
 
 
@@ -359,14 +368,14 @@ This function adds ordinalize support to every String object.
 
 > str
 
-    type: String
-    desc: The subject string.
+	type: String
+	desc: The subject string.
 
 #### Example code
 
-    var inflection = require( 'inflection' );
+	var inflection = require( 'inflection' );
 
-    inflection.ordinalize( 'the 1 pitch' ); // === 'the 1st pitch'
+	inflection.ordinalize( 'the 1 pitch' ); // === 'the 1st pitch'
 
 
 
@@ -374,6 +383,7 @@ This function adds ordinalize support to every String object.
 
 - Ryan Schuft <ryan.schuft@gmail.com>
 - Lance Pollard <lancejpollard@gmail.com> (Browser support)
+- brandondewitt
 
 
 
