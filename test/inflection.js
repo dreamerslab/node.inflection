@@ -37,8 +37,10 @@ module.exports = {
   },
 
   'test .camelize' : function ( callback ){
-    inflection.camelize( 'message_properties' ).should.equal( 'MessageProperties' );
     inflection.camelize( 'message_properties', true ).should.equal( 'messageProperties' );
+    inflection.camelize( 'message_properties' ).should.equal( 'MessageProperties' );
+    inflection.camelize( 'Message_Properties' ).should.equal( 'MessageProperties' );
+    inflection.camelize( 'MESSAGE_PROPERTIES' ).should.equal( 'MessageProperties' );
     callback();
   },
 
