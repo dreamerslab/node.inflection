@@ -39,6 +39,7 @@ Install inflection through npm
 - inflection.classify( str );
 - inflection.foreign_key( str, dropIdUbar );
 - inflection.ordinalize( str );
+- inflection.transform( str, arr );
 
 
 
