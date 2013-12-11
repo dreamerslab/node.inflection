@@ -1,5 +1,12 @@
 # History
 
+## 1.3.0 / 2013-12-11
+
+- [refactoring] Move `var` out of loops
+- [refactoring] Change the way `camelize` acts to mimic 100% `Rails ActiveSupport Inflector camelize`
+
+
+
 ## 1.2.7 / 2013-12-11
 
 - [new feature] Added transform, thnaks to `luk3thomas`
