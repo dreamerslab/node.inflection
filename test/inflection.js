@@ -101,5 +101,12 @@ module.exports = {
   'test .ordinalize' : function ( callback ){
     inflection.ordinalize( 'the 1 pitch' ).should.equal( 'the 1st pitch' );
     callback();
+  },
+
+  'test .transform' : function ( callback ){
+    inflection.transform( 'all job', [ 'pluralize', 'dasherize' ] ).should.equal( 'all-jobs' );
+    inflection.transform( 'all job', [ 'pluralize', 'anInvalidMethod' ] ).should.equal( 'all jobs' );
+    inflection.transform( 'all job', [ 'capitalize', 'pluralize', 'dasherize' ] ).should.equal( 'All-jobs' );
+    callback();
   }
 };
