@@ -1,5 +1,17 @@
 # History
 
+## 1.2.7 / 2013-12-11
+
+- [new feature] Added transform, thnaks to `luk3thomas`
+
+
+
+## 1.2.6 / 2013-05-24
+
+- [bug fix] Use instance instead of `this`
+
+
+
 ## 1.2.5 / 2013-01-09
 
 - [refactoring] Allow all caps strings to be returned from underscore
