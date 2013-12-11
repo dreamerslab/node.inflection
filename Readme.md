@@ -379,12 +379,36 @@ This function adds ordinalize support to every String object.
 
 
 
+### inflection.transform( str, arr );
+
+This function performs multiple inflection methods on a string.
+
+#### Arguments
+
+> str
+
+	type: String
+	desc: The subject string.
+
+> arr
+
+	type: Array
+	desc: An array of inflection methods.
+
+#### Example code
+
+	var inflection = require( 'inflection' );
+
+	inflection.transform( 'all job', [ 'pluralize', 'capitalize', 'dasherize' ]); // === 'All-jobs'
+
+
+
 ## Credit
 
 - Ryan Schuft <ryan.schuft@gmail.com>
 - Lance Pollard <lancejpollard@gmail.com> (Browser support)
 - brandondewitt
-
+- luk3thomas
 
 
 ## License
