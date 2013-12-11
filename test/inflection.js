@@ -40,7 +40,8 @@ module.exports = {
     inflection.camelize( 'message_properties', true ).should.equal( 'messageProperties' );
     inflection.camelize( 'message_properties' ).should.equal( 'MessageProperties' );
     inflection.camelize( 'Message_Properties' ).should.equal( 'MessageProperties' );
-    inflection.camelize( 'MESSAGE_PROPERTIES' ).should.equal( 'MessageProperties' );
+    inflection.camelize( 'MESSAGE_PROPERTIES' ).should.equal( 'MESSAGEProperties' );
+    inflection.camelize( 'fooBar_Baz', true ).should.equal( 'fooBarBaz' );
     callback();
   },
 
