@@ -1,6 +1,6 @@
 {
   "name"       : "inflection",
-  "version"    : "1.2.6",
+  "version"    : "1.2.7",
   "description": "A port of inflection-js to node.js module",
   "keywords"   : [
     "inflection", "inflections", "inflection-js", "pluralize" , "singularize",
@@ -17,7 +17,7 @@
   "dependencies"   : {},
   "devDependencies": {
     "node.flow": "1.2.2",
-    "should"   : "1.2.2"
+    "should"   : "2.1.1"
   },
   "main"      : "./lib/inflection.js",
   "repository": {

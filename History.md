@@ -3,6 +3,7 @@
 ## 1.2.7 / 2013-12-11
 
 - [new feature] Added transform, thnaks to `luk3thomas`
+- [update packages] should->v2.1.1
 
 
 
