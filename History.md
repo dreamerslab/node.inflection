@@ -1,5 +1,11 @@
 # History
 
+## 1.3.2 / 2013-12-12
+
+- [update packages] node.flow->1.2.3
+
+
+
 ## 1.3.1 / 2013-12-12
 
 - [refactoring] Support `Requirejs`
