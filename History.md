@@ -1,5 +1,11 @@
 # History
 
+## 1.3.1 / 2013-12-12
+
+- [refactoring] Support `Requirejs`
+
+
+
 ## 1.3.0 / 2013-12-11
 
 - [refactoring] Move `var` out of loops
