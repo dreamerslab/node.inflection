@@ -13,7 +13,9 @@
     { "name": "Ryan Schuft", "email": "ryan.schuft@gmail.com" },
     { "name": "Ben Lin", "email": "ben@dreamerslab.com" },
     { "name": "Lance Pollard", "email": "lancejpollard@gmail.com" },
-    { "name": "brandondewitt" }
+    { "name": "brandondewitt" },
+    { "name": "luk3thomas"  },
+    { "name": "Marcel Klehr" }
   ],
   "dependencies": {},
   "license": "MIT",

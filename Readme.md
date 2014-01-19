@@ -410,6 +410,7 @@ This function performs multiple inflection methods on a string.
 - Lance Pollard <lancejpollard@gmail.com> (Browser support)
 - brandondewitt
 - luk3thomas
+- Marcel Klehr
 
 
 ## License
