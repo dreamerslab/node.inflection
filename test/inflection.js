@@ -41,7 +41,15 @@ module.exports = {
     inflection.camelize( 'message_properties' ).should.equal( 'MessageProperties' );
     inflection.camelize( 'Message_Properties' ).should.equal( 'MessageProperties' );
     inflection.camelize( 'MESSAGE_PROPERTIES' ).should.equal( 'MESSAGEProperties' );
+    inflection.camelize( 'MESSAGE_PROPERTIES', true ).should.equal( 'mESSAGEProperties' );
     inflection.camelize( 'fooBar_Baz', true ).should.equal( 'fooBarBaz' );
+    inflection.camelize( 'FooBar_Baz', true ).should.equal( 'fooBarBaz' );
+    inflection.camelize( 'fooBar_fooBaz', true ).should.equal( 'fooBarFoobaz' );
+    inflection.camelize( 'FooBar_FooBaz', true ).should.equal( 'fooBarFoobaz' );
+    inflection.camelize( 'FooBar' ).should.equal( 'FooBar' );
+    inflection.camelize( 'FooBar', true ).should.equal( 'fooBar' );
+    inflection.camelize( 'Foo/Bar', true ).should.equal( 'foo::Bar' );
+    inflection.camelize( 'Foo/Bar' ).should.equal( 'Foo::Bar' );
     callback();
   },
 
