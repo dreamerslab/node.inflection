@@ -411,6 +411,7 @@ This function performs multiple inflection methods on a string.
 - brandondewitt
 - luk3thomas
 - Marcel Klehr
+- Raymond Feng
 
 
 ## License
