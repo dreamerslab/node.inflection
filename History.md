@@ -1,14 +1,23 @@
 # History
 
+## 1.3.5 / 2014-02-12
+
+- Unable to publsih v1.3.4 therefore jump to v1.3.5
+
+
+
 ## 1.3.4 / 2014-02-12
 
 - [update packages] should->3.1.2
 - [refactoring] Use `mocha` instead of hard coding tests
 
+
+
 ## 1.3.3 / 2014-01-22
 
 - [update packages] should->3.0.1
 - Added brower.json
+
 
 
 ## 1.3.2 / 2013-12-12
