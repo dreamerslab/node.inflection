@@ -33,6 +33,8 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'address' ).should.equal( 'address' );
     inflection.singularize( 'person' ).should.equal( 'person' );
     inflection.singularize( 'people' ).should.equal( 'person' );
+    inflection.singularize( 'movies' ).should.equal( 'movie' );
+    inflection.singularize( 'queries' ).should.equal( 'query' );
     inflection.singularize( 'octopi' ).should.equal( 'octopus' );
     inflection.singularize( 'Hats' ).should.equal( 'Hat' );
     inflection.singularize( 'guys', 'person' ).should.equal( 'person' );
