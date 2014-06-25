@@ -1,5 +1,11 @@
 # History
 
+## 1.3.7 / 2014-06-25
+
+- [refactoring] Adopt UMD import to work in a variety of different situations
+- [update packages] should->4.0.4
+
+
 ## 1.3.6 / 2014-06-07
 
 - [bug fix] Rearrange rules. `movies` -> `movy`

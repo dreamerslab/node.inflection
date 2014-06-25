@@ -408,12 +408,13 @@ This function performs multiple inflection methods on a string.
 
 - Ryan Schuft <ryan.schuft@gmail.com>
 - Lance Pollard <lancejpollard@gmail.com> (Browser support)
-- Dane O'Connor <Dane.OConnor@gmail.com>
+- Dane O'Connor <dane.oconnor@gmail.com>
 - brandondewitt
 - luk3thomas
 - Marcel Klehr
 - Raymond Feng
 - Kane Cohen <kanecohen@gmail.com>
+- Gianni Chiappetta <gianni@runlevel6.org>
 
 
 ## License
