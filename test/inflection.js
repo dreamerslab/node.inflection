@@ -21,6 +21,8 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'person' ).should.equal( 'people' );
     inflection.pluralize( 'octopus' ).should.equal( 'octopi' );
     inflection.pluralize( 'Hat' ).should.equal( 'Hats' );
+    inflection.pluralize( 'data' ).should.equal( 'data' );
+    inflection.pluralize( 'meta' ).should.equal( 'meta' );
     inflection.pluralize( 'person', 'guys' ).should.equal( 'guys' );
   });
 });
@@ -37,6 +39,8 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'queries' ).should.equal( 'query' );
     inflection.singularize( 'octopi' ).should.equal( 'octopus' );
     inflection.singularize( 'Hats' ).should.equal( 'Hat' );
+    inflection.singularize( 'data' ).should.equal( 'datum' );
+    inflection.singularize( 'meta' ).should.equal( 'metum' );
     inflection.singularize( 'guys', 'person' ).should.equal( 'person' );
   });
 });
