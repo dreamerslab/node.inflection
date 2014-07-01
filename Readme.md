@@ -404,6 +404,23 @@ This function performs multiple inflection methods on a string.
 
 
 
+#### Angular
+
+You can use it as AngularJS filters by requiring `ngInflector` in your app, like this:
+
+```javascript
+var app = angular.module('app', [
+    'ngInflector',
+    'ngRoute'
+]);
+```
+
+And then use it in your templates, like this:
+
+```html
+{{ yourThing | singularize | titleize }}
+```
+
 ## Credit
 
 - Ryan Schuft <ryan.schuft@gmail.com>
@@ -415,7 +432,7 @@ This function performs multiple inflection methods on a string.
 - Raymond Feng
 - Kane Cohen <kanecohen@gmail.com>
 - Gianni Chiappetta <gianni@runlevel6.org>
-
+- David Konsumer <konsumer@jetboystudio.com> (Angular support)
 
 ## License
 
