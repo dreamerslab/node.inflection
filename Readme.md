@@ -404,7 +404,7 @@ This function performs multiple inflection methods on a string.
 
 
 
-#### Angular
+### Angular
 
 You can use it as AngularJS filters by requiring `ngInflector` in your app, like this:
 
