@@ -432,7 +432,7 @@ And then use it in your templates, like this:
 - Raymond Feng
 - Kane Cohen <kanecohen@gmail.com>
 - Gianni Chiappetta <gianni@runlevel6.org>
-- David Konsumer <konsumer@jetboystudio.com> (Angular support)
+- konsumer (Angular support)
 
 ## License
 
