@@ -31,19 +31,19 @@ Install inflection through npm
 
 ## API
 
-- inflection.indexOf( arr, item, fromIndex, compareFunc );
+- inflection.indexOf( arr, item, from_index, compare_func );
 - inflection.pluralize( str, plural );
 - inflection.singularize( str, singular );
-- inflection.camelize( str, lowFirstLetter );
-- inflection.underscore( str, allUpperCase );
-- inflection.humanize( str, lowFirstLetter );
+- inflection.camelize( str, low_first_letter );
+- inflection.underscore( str, all_upper_case );
+- inflection.humanize( str, low_first_letter );
 - inflection.capitalize( str );
 - inflection.dasherize( str );
 - inflection.titleize( str );
 - inflection.demodulize( str );
 - inflection.tableize( str );
 - inflection.classify( str );
-- inflection.foreign_key( str, dropIdUbar );
+- inflection.foreign_key( str, drop_id_ubar );
 - inflection.ordinalize( str );
 - inflection.transform( str, arr );
 
@@ -57,7 +57,7 @@ Install inflection through npm
 
 
 
-### inflection.indexOf( arr, item, fromIndex, compareFunc );
+### inflection.indexOf( arr, item, from_index, compare_func );
 
 This lets us detect if an Array contains a given element.
 
@@ -73,12 +73,12 @@ This lets us detect if an Array contains a given element.
 	type: Object
 	desc: Object to locate in the Array.
 
-> fromIndex
+> from_index
 
 	type: Number
 	desc: Starts checking from this position in the Array.(optional)
 
-> compareFunc
+> compare_func
 
 	type: Function
 	desc: Function used to compare Array item vs passed item.(optional)
@@ -146,7 +146,7 @@ This function adds singularization support to every String object.
 
 
 
-### inflection.camelize( str, lowFirstLetter );
+### inflection.camelize( str, low_first_letter );
 
 This function adds camelization support to every String object.
 
@@ -157,7 +157,7 @@ This function adds camelization support to every String object.
 	type: String
 	desc: The subject string.
 
-> lowFirstLetter
+> low_first_letter
 
 	type: Boolean
 	desc: Default is to capitalize the first letter of the results. Passing true will lowercase it. (optional)
@@ -171,7 +171,7 @@ This function adds camelization support to every String object.
 
 
 
-### inflection.underscore( str, allUpperCase );
+### inflection.underscore( str, all_upper_case );
 
 This function adds underscore support to every String object.
 
@@ -182,7 +182,7 @@ This function adds underscore support to every String object.
 	type: String
 	desc: The subject string.
 
-> allUpperCase
+> all_upper_case
 
 	type: Boolean
 	desc: Default is to lowercase and add underscore prefix
@@ -200,7 +200,7 @@ This function adds underscore support to every String object.
 
 
 
-### inflection.humanize( str, lowFirstLetter );
+### inflection.humanize( str, low_first_letter );
 
 This function adds humanize support to every String object.
 
@@ -211,7 +211,7 @@ This function adds humanize support to every String object.
 	type: String
 	desc: The subject string.
 
-> lowFirstLetter
+> low_first_letter
 
 	type: Boolean
 	desc: Default is to capitalize the first letter of the results. Passing true will lowercase it. (optional)
@@ -342,7 +342,7 @@ This function adds classification support to every String object.
 
 
 
-### inflection.foreign_key( str, dropIdUbar );
+### inflection.foreign_key( str, drop_id_ubar );
 
 This function adds foreign key support to every String object.
 
@@ -353,7 +353,7 @@ This function adds foreign key support to every String object.
 	type: String
 	desc: The subject string.
 
-> lowFirstLetter
+> low_first_letter
 
 	type: Boolean
 	desc: Default is to seperate id with an underbar at the end of the class name, you can pass true to skip it.(optional)
