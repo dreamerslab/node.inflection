@@ -15,6 +15,12 @@ Checkout `package.json` for dependencies.
 
 
 
+## Angular Support
+
+Checkout [ngInflection](https://github.com/konsumer/ngInflection) from [konsumer](https://github.com/konsumer)
+
+
+
 ## Installation
 
 Install inflection through npm
