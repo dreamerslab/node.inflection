@@ -148,7 +148,7 @@ This function adds singularization support to every String object.
 
 ### inflection.camelize( str, low_first_letter );
 
-This function adds camelization support to every String object.
+This function transforms String object from underscore to camelcase.
 
 #### Arguments
 
@@ -173,7 +173,7 @@ This function adds camelization support to every String object.
 
 ### inflection.underscore( str, all_upper_case );
 
-This function adds underscore support to every String object.
+This function transforms String object from camelcase to underscore.
 
 #### Arguments
 
