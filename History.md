@@ -1,9 +1,15 @@
 # History
 
+## 1.3.8 / 2014-07-03
+- [others] syntax tuning
+
+
+
 ## 1.3.7 / 2014-06-25
 
 - [refactoring] Adopt UMD import to work in a variety of different situations
 - [update packages] should->4.0.4
+
 
 
 ## 1.3.6 / 2014-06-07
