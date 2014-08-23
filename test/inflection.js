@@ -48,22 +48,22 @@ describe( 'test .singularize', function (){
 describe( 'test .inflect', function (){
   it( 'should correctly inflect the given word based on an integer', function (){
     // zero should use plural state
-    inflection.inflect( 'people', 0).should.equal( 'people' );
-    inflection.inflect( 'men', 0).should.equal( 'men' );
-    inflection.inflect( 'person', 0).should.equal( 'people' );
-    inflection.inflect( 'octopus', 0).should.equal( 'octopi' );
-    inflection.inflect( 'Hat', 0).should.equal( 'Hats' );
-    inflection.inflect( 'data', 0).should.equal( 'data' );
-    inflection.inflect( 'meta', 0).should.equal( 'meta' );
+    inflection.inflect( 'people', 0 ).should.equal( 'people' );
+    inflection.inflect( 'men', 0 ).should.equal( 'men' );
+    inflection.inflect( 'person', 0 ).should.equal( 'people' );
+    inflection.inflect( 'octopus', 0 ).should.equal( 'octopi' );
+    inflection.inflect( 'Hat', 0 ).should.equal( 'Hats' );
+    inflection.inflect( 'data', 0 ).should.equal( 'data' );
+    inflection.inflect( 'meta', 0 ).should.equal( 'meta' );
     inflection.inflect( 'person', 0, 'guy', 'guys' ).should.equal( 'guys' );
     // greater than 1 should use plural state
-    inflection.inflect( 'people', 2).should.equal( 'people' );
-    inflection.inflect( 'men', 2).should.equal( 'men' );
-    inflection.inflect( 'person', 2).should.equal( 'people' );
-    inflection.inflect( 'octopus', 2).should.equal( 'octopi' );
-    inflection.inflect( 'Hat', 2).should.equal( 'Hats' );
-    inflection.inflect( 'data', 2).should.equal( 'data' );
-    inflection.inflect( 'meta', 2).should.equal( 'meta' );
+    inflection.inflect( 'people', 2 ).should.equal( 'people' );
+    inflection.inflect( 'men', 2 ).should.equal( 'men' );
+    inflection.inflect( 'person', 2 ).should.equal( 'people' );
+    inflection.inflect( 'octopus', 2 ).should.equal( 'octopi' );
+    inflection.inflect( 'Hat', 2 ).should.equal( 'Hats' );
+    inflection.inflect( 'data', 2 ).should.equal( 'data' );
+    inflection.inflect( 'meta', 2 ).should.equal( 'meta' );
     inflection.inflect( 'person', 2, 'guy', 'guys' ).should.equal( 'guys' );
     // 1 should use singular state
     inflection.inflect( 'status', 1 ).should.equal( 'status' );
@@ -80,7 +80,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'meta', 1 ).should.equal( 'metum' );
     inflection.inflect( 'guys', 1, 'person', 'people' ).should.equal( 'person' );
     // not a number should return original value
-    inflection.inflect( 'original', 'not a number').should.equal('original');
+    inflection.inflect( 'original', 'not a number' ).should.equal( 'original' );
   });
 });
 
