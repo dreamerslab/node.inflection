@@ -26,6 +26,7 @@
     "inflection-js",
     "pluralize",
     "singularize",
+    "inflect",
     "camelize",
     "underscore",
     "humanize",
