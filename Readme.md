@@ -34,6 +34,7 @@ Install inflection through npm
 - inflection.indexOf( arr, item, from_index, compare_func );
 - inflection.pluralize( str, plural );
 - inflection.singularize( str, singular );
+- inflection.inflect( str, count, singular, plural );
 - inflection.camelize( str, low_first_letter );
 - inflection.underscore( str, all_upper_case );
 - inflection.humanize( str, low_first_letter );
@@ -143,6 +144,46 @@ This function adds singularization support to every String object.
 	inflection.singularize( 'octopi' ); // === "octopus"
 	inflection.singularize( 'Hats' ); // === 'Hat'
 	inflection.singularize( 'guys', 'person' ); // === 'person'
+
+
+
+### inflection.inflect( str, count, singular, plural );
+
+This function will pluralize or singularlize a String appropriately based on an integer value.
+
+#### Arguments
+
+> str
+
+	type: String
+	desc: The subject string.
+
+> count
+	type: Number
+	desc: The number to base pluralization off of.
+
+> singular
+
+	type: String
+	desc: Overrides normal output with said String.(optional)
+
+> plural
+
+	type: String
+	desc: Overrides normal output with said String.(optional)
+
+#### Example code
+
+		var inflection = require( 'inflection' );
+
+		inflection.inflect( 'people' 1 ); // === 'person'
+		inflection.inflect( 'octopi' 1 ); // === 'octopus'
+		inflection.inflect( 'Hats' 1 ); // === 'Hat'
+		inflection.inflect( 'guys', 1 , 'person' ); // === 'person'
+		inflection.inflect( 'person', 2 ); // === 'people'
+		inflection.inflect( 'octopus', 2 ); // === 'octopi'
+		inflection.inflect( 'Hat', 2 ); // === 'Hats'
+		inflection.inflect( 'person', 2, null, 'guys' ); // === 'guys'
 
 
 
@@ -421,6 +462,8 @@ This function performs multiple inflection methods on a string.
 - Raymond Feng
 - Kane Cohen <kanecohen@gmail.com>
 - Gianni Chiappetta <gianni@runlevel6.org>
+- Eric Brody
+
 
 
 ## License
