@@ -24,6 +24,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'data' ).should.equal( 'data' );
     inflection.pluralize( 'meta' ).should.equal( 'meta' );
     inflection.pluralize( 'person', 'guys' ).should.equal( 'guys' );
+    inflection.pluralize( 'goose', 'geese').should.equal( 'geese' );
   });
 });
 
@@ -42,6 +43,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'data' ).should.equal( 'datum' );
     inflection.singularize( 'meta' ).should.equal( 'metum' );
     inflection.singularize( 'guys', 'person' ).should.equal( 'person' );
+    inflection.singularize( 'geese', 'goose').should.equal( 'goose' );
   });
 });
 
@@ -56,6 +58,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'data', 0 ).should.equal( 'data' );
     inflection.inflect( 'meta', 0 ).should.equal( 'meta' );
     inflection.inflect( 'person', 0, 'guy', 'guys' ).should.equal( 'guys' );
+    inflection.inflect( 'geese', 0, 'goose' ).should.equal( 'geese' );
     // greater than 1 should use plural state
     inflection.inflect( 'people', 2 ).should.equal( 'people' );
     inflection.inflect( 'men', 2 ).should.equal( 'men' );
@@ -65,6 +68,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'data', 2 ).should.equal( 'data' );
     inflection.inflect( 'meta', 2 ).should.equal( 'meta' );
     inflection.inflect( 'person', 2, 'guy', 'guys' ).should.equal( 'guys' );
+    inflection.inflect( 'geese', 2, 'goose').should.equal( 'geese' );
     // 1 should use singular state
     inflection.inflect( 'status', 1 ).should.equal( 'status' );
     inflection.inflect( 'child', 1 ).should.equal( 'child' );
@@ -79,6 +83,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'data', 1 ).should.equal( 'datum' );
     inflection.inflect( 'meta', 1 ).should.equal( 'metum' );
     inflection.inflect( 'guys', 1, 'person', 'people' ).should.equal( 'person' );
+    inflection.inflect( 'geese', 1, 'goose' ).should.equal( 'goose' );
     // not a number should return original value
     inflection.inflect( 'original', 'not a number' ).should.equal( 'original' );
   });
