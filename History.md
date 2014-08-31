@@ -1,6 +1,19 @@
 # History
 
+## 1.4.1 / 2014-08-31
+
+- [bug fix] fix `goose`, `tooth` & `foot` plural & singular form
+
+
+
+## 1.4.0 / 2014-08-23
+
+- [new feature] Adds support for an `inflect` method that will choose to pluralize or singularize a noun based on an integer value
+
+
+
 ## 1.3.8 / 2014-07-03
+
 - [others] syntax tuning
 
 
