@@ -1,8 +1,14 @@
 # History
 
+## 1.4.2 / 2014-09-05
+
+- [bug fix] Fix wrong implementation of `goose`, `tooth` & `foot`
+
+
+
 ## 1.4.1 / 2014-08-31
 
-- [bug fix] fix `goose`, `tooth` & `foot` plural & singular form
+- [bug fix] Fix `goose`, `tooth` & `foot` plural & singular form
 
 
 
@@ -14,7 +20,7 @@
 
 ## 1.3.8 / 2014-07-03
 
-- [others] syntax tuning
+- [others] Syntax tuning
 
 
 
@@ -27,7 +33,7 @@
 
 ## 1.3.6 / 2014-06-07
 
-- [bug fix] Rearrange rules. `movies` -> `movy`
+- [bug fix] Rearrange rules. `movies`->`movy`
 
 
 
