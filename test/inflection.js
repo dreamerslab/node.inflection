@@ -29,6 +29,8 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'goose' ).should.equal( 'geese' );
     inflection.pluralize( 'tooth' ).should.equal( 'teeth' );
     inflection.pluralize( 'teeth' ).should.equal( 'teeth' );
+    inflection.pluralize( 'street' ).should.equal( 'streets' );
+    inflection.pluralize( 'streets' ).should.equal( 'streets' );
     inflection.pluralize( 'data' ).should.equal( 'data' );
     inflection.pluralize( 'meta' ).should.equal( 'meta' );
     inflection.pluralize( 'person', 'guys' ).should.equal( 'guys' );
@@ -55,6 +57,8 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'geese' ).should.equal( 'goose' );
     inflection.singularize( 'teeth' ).should.equal( 'tooth' );
     inflection.singularize( 'tooth' ).should.equal( 'tooth' );
+    inflection.singularize( 'street' ).should.equal( 'street' );
+    inflection.singularize( 'streets' ).should.equal( 'street' );
     inflection.singularize( 'data' ).should.equal( 'datum' );
     inflection.singularize( 'meta' ).should.equal( 'metum' );
     inflection.singularize( 'guys', 'person' ).should.equal( 'person' );
