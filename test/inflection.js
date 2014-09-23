@@ -20,6 +20,9 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'men' ).should.equal( 'men' );
     inflection.pluralize( 'person' ).should.equal( 'people' );
     inflection.pluralize( 'octopus' ).should.equal( 'octopi' );
+    inflection.pluralize( 'human' ).should.equal( 'humans' );
+    inflection.pluralize( 'aircraft' ).should.equal( 'aircraft' );
+    inflection.pluralize( 'luck' ).should.equal( 'luck' );
     inflection.pluralize( 'Hat' ).should.equal( 'Hats' );
     inflection.pluralize( 'life' ).should.equal( 'lives' );
     inflection.pluralize( 'bath' ).should.equal( 'baths' );
@@ -33,6 +36,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'streets' ).should.equal( 'streets' );
     inflection.pluralize( 'data' ).should.equal( 'data' );
     inflection.pluralize( 'meta' ).should.equal( 'meta' );
+    inflection.pluralize( 'summons' ).should.equal( 'summonses' );
     inflection.pluralize( 'person', 'guys' ).should.equal( 'guys' );
   });
 });
