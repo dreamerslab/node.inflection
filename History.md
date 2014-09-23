@@ -1,5 +1,11 @@
 # History
 
+## 1.5.0 / 2014-09-23
+
+- [refactor] Add more rules and uncountable nouns
+
+
+
 ## 1.4.2 / 2014-09-05
 
 - [bug fix] Fix wrong implementation of `goose`, `tooth` & `foot`
@@ -26,7 +32,7 @@
 
 ## 1.3.7 / 2014-06-25
 
-- [refactoring] Adopt UMD import to work in a variety of different situations
+- [refactor] Adopt UMD import to work in a variety of different situations
 - [update packages] should->4.0.4
 
 
@@ -46,7 +52,7 @@
 ## 1.3.4 / 2014-02-12
 
 - [update packages] should->3.1.2
-- [refactoring] Use `mocha` instead of hard coding tests
+- [refactor] Use `mocha` instead of hard coding tests
 
 
 
@@ -65,14 +71,14 @@
 
 ## 1.3.1 / 2013-12-12
 
-- [refactoring] Support `Requirejs`
+- [refactor] Support `Requirejs`
 
 
 
 ## 1.3.0 / 2013-12-11
 
-- [refactoring] Move `var` out of loops
-- [refactoring] Change the way `camelize` acts to mimic 100% `Rails ActiveSupport Inflector camelize`
+- [refactor] Move `var` out of loops
+- [refactor] Change the way `camelize` acts to mimic 100% `Rails ActiveSupport Inflector camelize`
 
 
 
@@ -91,7 +97,7 @@
 
 ## 1.2.5 / 2013-01-09
 
-- [refactoring] Allow all caps strings to be returned from underscore
+- [refactor] Allow all caps strings to be returned from underscore
 
 
 
@@ -136,7 +142,7 @@
 ## 1.1.0 / 2012-02-13
 
 - [update packages] node.flow->v1.0.0
-- [refactoring] Read version number from package.json
+- [refactor] Read version number from package.json
 
 
 
@@ -145,7 +151,7 @@
 - Remove make file
 - Add pluralize rules
 - Add pluralize tests
-- [refactoring] Use object.jey instead of for in
+- [refactor] Use object.jey instead of for in
 
 
 
