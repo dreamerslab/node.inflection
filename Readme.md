@@ -288,7 +288,7 @@ This function adds capitalization support to every String object.
 
 ### inflection.dasherize( str );
 
-This function adds dasherization support to every String object.
+This function replaces underscores with dashes in the string.
 
 #### Arguments
 
