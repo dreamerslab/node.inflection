@@ -37,6 +37,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'data' ).should.equal( 'data' );
     inflection.pluralize( 'meta' ).should.equal( 'meta' );
     inflection.pluralize( 'summons' ).should.equal( 'summonses' );
+    inflection.pluralize( 'whereas' ).should.equal( 'whereases' );
     inflection.pluralize( 'person', 'guys' ).should.equal( 'guys' );
   });
 });
@@ -65,6 +66,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'streets' ).should.equal( 'street' );
     inflection.singularize( 'data' ).should.equal( 'datum' );
     inflection.singularize( 'meta' ).should.equal( 'metum' );
+    inflection.singularize( 'whereases' ).should.equal( 'whereas' );
     inflection.singularize( 'guys', 'person' ).should.equal( 'person' );
   });
 });
