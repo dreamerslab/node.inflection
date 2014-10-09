@@ -1,5 +1,11 @@
 # History
 
+## 1.5.1 / 2014-09-23
+
+- [bug fix] Fix `whereas` plural & singular form
+
+
+
 ## 1.5.0 / 2014-09-23
 
 - [refactor] Add more rules and uncountable nouns
