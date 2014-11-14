@@ -1,5 +1,11 @@
 # History
 
+## 1.5.2 / 2014-11-14
+
+- [bug fix] `business` & `access` plural form
+
+
+
 ## 1.5.1 / 2014-09-23
 
 - [bug fix] Fix `whereas` plural & singular form
