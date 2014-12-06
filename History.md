@@ -1,5 +1,11 @@
 # History
 
+## 1.5.3 / 2014-12-06
+
+- [bug fix] Remove invalid uncountable words
+
+
+
 ## 1.5.2 / 2014-11-14
 
 - [bug fix] `business` & `access` plural form

@@ -1,6 +1,6 @@
 {
   "name"       : "inflection",
-  "version"    : "1.5.2",
+  "version"    : "1.5.3",
   "description": "A port of inflection-js to node.js module",
   "keywords"   : [
     "inflection", "inflections", "inflection-js", "pluralize" , "singularize",
@@ -20,12 +20,13 @@
     { "name": "Raymond Feng" },
     { "name": "Kane Cohen", "email": "kanecohen@gmail.com" },
     { "name": "Gianni Chiappetta", "email": "gianni@runlevel6.org" },
-    { "name": "Eric Brody" }
+    { "name": "Eric Brody" },
+    { "name": "overlookmotel" }
   ],
   "dependencies"   : {},
   "devDependencies": {
-    "mocha" : "1.21.4",
-    "should": "4.0.4"
+    "mocha" : "2.0.1",
+    "should": "4.3.0"
   },
   "main"      : "./lib/inflection.js",
   "repository": {

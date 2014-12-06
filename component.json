@@ -1,6 +1,6 @@
 {
   "name": "inflection",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "repo": "dreamerslab/node.inflection",
   "description": "A port of inflection-js to node.js module",
   "keywords"   : [
@@ -21,7 +21,8 @@
     { "name": "Raymond Feng" },
     { "name": "Kane Cohen", "email": "kanecohen@gmail.com" },
     { "name": "Gianni Chiappetta", "email": "gianni@runlevel6.org" },
-    { "name": "Eric Brody" }
+    { "name": "Eric Brody" },
+    { "name": "overlookmotel" }
   ],
   "dependencies": {},
   "license": "MIT",

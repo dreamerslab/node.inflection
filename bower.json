@@ -1,6 +1,6 @@
 {
   "name": "inflection",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "homepage": "https://github.com/dreamerslab/node.inflection",
   "description": "JavaScript Inflection Support",
   "authors": [
@@ -18,7 +18,8 @@
     { "name": "Raymond Feng" },
     { "name": "Kane Cohen", "email": "kanecohen@gmail.com" },
     { "name": "Gianni Chiappetta", "email": "gianni@runlevel6.org" },
-    { "name": "Eric Brody" }
+    { "name": "Eric Brody" },
+    { "name": "overlookmotel" }
   ],
   "main": "inflection.min.js",
   "keywords": [
