@@ -21,7 +21,7 @@
     { "name": "Eric Brody" },
     { "name": "overlookmotel" }
   ],
-  "main": "inflection.min.js",
+  "main": "lib/inflection.js",
   "keywords": [
     "inflection",
     "inflections",
