@@ -39,6 +39,9 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'summons' ).should.equal( 'summonses' );
     inflection.pluralize( 'whereas' ).should.equal( 'whereases' );
     inflection.pluralize( 'person', 'guys' ).should.equal( 'guys' );
+    inflection.pluralize( 'index' ).should.equal( 'indices' );
+    inflection.pluralize( 'matrix' ).should.equal( 'matrices' );
+    inflection.pluralize( 'vertex' ).should.equal( 'vertices' );
   });
 });
 
@@ -68,6 +71,8 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'meta' ).should.equal( 'metum' );
     inflection.singularize( 'whereases' ).should.equal( 'whereas' );
     inflection.singularize( 'guys', 'person' ).should.equal( 'person' );
+    inflection.singularize( 'matrices' ).should.equal( 'matrix' );
+    inflection.singularize( 'vertices' ).should.equal( 'vertex' );
   });
 });
 
