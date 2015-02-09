@@ -1,5 +1,12 @@
 # History
 
+## 1.6.0 / 2015-12-06
+
+- [bug fix] Special rules for index, vertex, and matrix masked by general rule x
+- [update packages] mocha->2.1.0, should->4.6.5
+
+
+
 ## 1.5.3 / 2014-12-06
 
 - [bug fix] Remove invalid uncountable words

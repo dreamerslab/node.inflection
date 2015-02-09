@@ -466,6 +466,8 @@ This function performs multiple inflection methods on a string.
 - Gianni Chiappetta <gianni@runlevel6.org>
 - Eric Brody
 - overlookmotel
+- Patrick Mowrer
+- Greger Olsson
 
 
 
