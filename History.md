@@ -1,6 +1,12 @@
 # History
 
-## 1.6.0 / 2015-12-06
+## 1.7.0 / 2015-03-25
+- [bug fix] `canvas` plural & singular form
+- [update packages] mocha->2.2.1, should->5.2.0
+
+
+
+## 1.6.0 / 2014-12-06
 
 - [bug fix] Special rules for index, vertex, and matrix masked by general rule x
 - [update packages] mocha->2.1.0, should->4.6.5

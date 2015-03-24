@@ -1,6 +1,6 @@
 {
   "name"       : "inflection",
-  "version"    : "1.6.0",
+  "version"    : "1.7.0",
   "description": "A port of inflection-js to node.js module",
   "keywords"   : [
     "inflection", "inflections", "inflection-js", "pluralize" , "singularize",
@@ -27,8 +27,8 @@
   ],
   "dependencies"   : {},
   "devDependencies": {
-    "mocha" : "2.1.0",
-    "should": "4.6.5"
+    "mocha" : "2.2.1",
+    "should": "5.2.0"
   },
   "main"      : "./lib/inflection.js",
   "repository": {
