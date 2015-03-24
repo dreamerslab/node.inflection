@@ -42,6 +42,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'index' ).should.equal( 'indices' );
     inflection.pluralize( 'matrix' ).should.equal( 'matrices' );
     inflection.pluralize( 'vertex' ).should.equal( 'vertices' );
+    inflection.pluralize( 'canvas' ).should.equal( 'canvases' );
   });
 });
 
@@ -73,6 +74,8 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'guys', 'person' ).should.equal( 'person' );
     inflection.singularize( 'matrices' ).should.equal( 'matrix' );
     inflection.singularize( 'vertices' ).should.equal( 'vertex' );
+    inflection.singularize( 'canvases' ).should.equal( 'canvas' );
+
   });
 });
 
