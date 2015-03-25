@@ -1,5 +1,10 @@
 # History
 
+## 1.7.1 / 2015-03-25
+- [bug fix] `woman` plural & singular form
+
+
+
 ## 1.7.0 / 2015-03-25
 - [bug fix] `canvas` plural & singular form
 - [update packages] mocha->2.2.1, should->5.2.0
