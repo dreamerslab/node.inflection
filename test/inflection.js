@@ -18,6 +18,8 @@ describe( 'test .pluralize', function (){
   it( 'should pluralize the given word', function (){
     inflection.pluralize( 'people' ).should.equal( 'people' );
     inflection.pluralize( 'men' ).should.equal( 'men' );
+    inflection.pluralize( 'women' ).should.equal( 'women' );
+    inflection.pluralize( 'woman' ).should.equal( 'women' );
     inflection.pluralize( 'person' ).should.equal( 'people' );
     inflection.pluralize( 'octopus' ).should.equal( 'octopi' );
     inflection.pluralize( 'human' ).should.equal( 'humans' );
@@ -52,6 +54,9 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'child' ).should.equal( 'child' );
     inflection.singularize( 'children' ).should.equal( 'child' );
     inflection.singularize( 'address' ).should.equal( 'address' );
+    inflection.singularize( 'man' ).should.equal( 'man' );
+    inflection.singularize( 'woman' ).should.equal( 'woman' );
+    inflection.singularize( 'women' ).should.equal( 'woman' );
     inflection.singularize( 'person' ).should.equal( 'person' );
     inflection.singularize( 'people' ).should.equal( 'person' );
     inflection.singularize( 'movies' ).should.equal( 'movie' );
