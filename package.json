@@ -36,10 +36,7 @@
     "url" : "https://github.com/dreamerslab/node.inflection.git"
   },
   "engines" : [ "node >= 0.4.0" ],
-  "licenses": [{
-    "type": "MIT",
-    "url" : "http://en.wikipedia.org/wiki/MIT_License"
-  }],
+  "license": "MIT",
   "scripts": {
     "test" : "mocha -R spec"
   }
