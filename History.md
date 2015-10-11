@@ -1,5 +1,10 @@
 # History
 
+## 1.7.2 / 2015-10-11
+- [update packages] mocha->2.3.3, should->7.1.0
+
+
+
 ## 1.7.1 / 2015-03-25
 - [bug fix] `woman` plural & singular form
 
