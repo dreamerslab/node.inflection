@@ -23,6 +23,12 @@ Checkout [ngInflection](https://github.com/konsumer/ngInflection) from [konsumer
 
 
 
+## Meteor Support
+
+Checkout [Meteor Inflector](https://github.com/katrotz/meteor-inflector) from [Veaceslav Cotruta](https://github.com/katrotz)
+
+
+
 ## Installation
 
 Install inflection through npm
