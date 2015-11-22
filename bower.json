@@ -21,7 +21,8 @@
     { "name": "Eric Brody" },
     { "name": "overlookmotel" },
     { "name": "Patrick Mowrer" },
-    { "name": "Greger Olsson" }
+    { "name": "Greger Olsson" },
+    { "name": "Jason Crawford", "email": "jason@jasoncrawford.org" }
   ],
   "main": "lib/inflection.js",
   "keywords": [

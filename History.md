@@ -1,5 +1,11 @@
 # History
 
+## 1.8.0 / 2015-11-22
+- [update packages] mocha->2.3.4, should->7.1.1
+- [bug fix] `criterion` plural & singular form
+
+
+
 ## 1.7.2 / 2015-10-11
 - [update packages] mocha->2.3.3, should->7.1.0
 

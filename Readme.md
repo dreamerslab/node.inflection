@@ -474,7 +474,7 @@ This function performs multiple inflection methods on a string.
 - overlookmotel
 - Patrick Mowrer
 - Greger Olsson
-
+- Jason Crawford <jason@jasoncrawford.org>
 
 
 ## License
