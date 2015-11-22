@@ -45,6 +45,8 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'matrix' ).should.equal( 'matrices' );
     inflection.pluralize( 'vertex' ).should.equal( 'vertices' );
     inflection.pluralize( 'canvas' ).should.equal( 'canvases' );
+    inflection.pluralize( 'criterion' ).should.equal( 'criteria' );
+    inflection.pluralize( 'criteria' ).should.equal( 'criteria' );
   });
 });
 
@@ -80,6 +82,8 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'matrices' ).should.equal( 'matrix' );
     inflection.singularize( 'vertices' ).should.equal( 'vertex' );
     inflection.singularize( 'canvases' ).should.equal( 'canvas' );
+    inflection.singularize( 'criteria' ).should.equal( 'criterion' );
+    inflection.singularize( 'criterion' ).should.equal( 'criterion' );
 
   });
 });
