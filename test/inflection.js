@@ -47,6 +47,8 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'canvas' ).should.equal( 'canvases' );
     inflection.pluralize( 'criterion' ).should.equal( 'criteria' );
     inflection.pluralize( 'criteria' ).should.equal( 'criteria' );
+    inflection.pluralize( 'genus' ).should.equal( 'genera' );
+    inflection.pluralize( 'genera' ).should.equal( 'genera' );
   });
 });
 
@@ -84,6 +86,8 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'canvases' ).should.equal( 'canvas' );
     inflection.singularize( 'criteria' ).should.equal( 'criterion' );
     inflection.singularize( 'criterion' ).should.equal( 'criterion' );
+    inflection.singularize( 'genera' ).should.equal( 'genus' );
+    inflection.singularize( 'genus' ).should.equal( 'genus' );
 
   });
 });
