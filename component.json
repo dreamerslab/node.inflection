@@ -1,6 +1,6 @@
 {
   "name": "inflection",
-  "version": "1.7.1",
+  "version": "1.9.0",
   "repo": "dreamerslab/node.inflection",
   "description": "A port of inflection-js to node.js module",
   "keywords"   : [

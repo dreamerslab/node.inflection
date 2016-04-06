@@ -1,5 +1,11 @@
 # History
 
+## 1.9.0 / 2016-04-06
+- [update packages] mocha->2.4.5, should->8.3.0
+- [bug fix] `genus` plural & singular form
+
+
+
 ## 1.8.0 / 2015-11-22
 - [update packages] mocha->2.3.4, should->7.1.1
 - [bug fix] `criterion` plural & singular form
