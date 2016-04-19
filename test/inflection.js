@@ -45,6 +45,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'matrix' ).should.equal( 'matrices' );
     inflection.pluralize( 'vertex' ).should.equal( 'vertices' );
     inflection.pluralize( 'canvas' ).should.equal( 'canvases' );
+    inflection.pluralize( 'campus' ).should.equal( 'campuses' );
     inflection.pluralize( 'criterion' ).should.equal( 'criteria' );
     inflection.pluralize( 'criteria' ).should.equal( 'criteria' );
     inflection.pluralize( 'genus' ).should.equal( 'genera' );
