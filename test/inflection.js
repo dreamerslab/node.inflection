@@ -46,6 +46,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'vertex' ).should.equal( 'vertices' );
     inflection.pluralize( 'canvas' ).should.equal( 'canvases' );
     inflection.pluralize( 'campus' ).should.equal( 'campuses' );
+    inflection.pluralize( 'campuses' ).should.equal( 'campuses' );
     inflection.pluralize( 'criterion' ).should.equal( 'criteria' );
     inflection.pluralize( 'criteria' ).should.equal( 'criteria' );
     inflection.pluralize( 'genus' ).should.equal( 'genera' );
@@ -85,6 +86,8 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'matrices' ).should.equal( 'matrix' );
     inflection.singularize( 'vertices' ).should.equal( 'vertex' );
     inflection.singularize( 'canvases' ).should.equal( 'canvas' );
+    inflection.singularize( 'campuses' ).should.equal( 'campus' );
+    inflection.singularize( 'campus' ).should.equal( 'campus' );
     inflection.singularize( 'criteria' ).should.equal( 'criterion' );
     inflection.singularize( 'criterion' ).should.equal( 'criterion' );
     inflection.singularize( 'genera' ).should.equal( 'genus' );

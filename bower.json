@@ -1,6 +1,6 @@
 {
   "name": "inflection",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "homepage": "https://github.com/dreamerslab/node.inflection",
   "description": "JavaScript Inflection Support",
   "authors": [
@@ -22,7 +22,8 @@
     { "name": "overlookmotel" },
     { "name": "Patrick Mowrer" },
     { "name": "Greger Olsson" },
-    { "name": "Jason Crawford", "email": "jason@jasoncrawford.org" }
+    { "name": "Jason Crawford", "email": "jason@jasoncrawford.org" },
+    { "name": "Ray Myers", "email": "ray.myers@gmail.com" }
   ],
   "main": "lib/inflection.js",
   "keywords": [

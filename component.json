@@ -1,6 +1,6 @@
 {
   "name": "inflection",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "repo": "dreamerslab/node.inflection",
   "description": "A port of inflection-js to node.js module",
   "keywords"   : [
@@ -25,7 +25,8 @@
     { "name": "overlookmotel" },
     { "name": "Patrick Mowrer" },
     { "name": "Greger Olsson" },
-    { "name": "Jason Crawford", "email": "jason@jasoncrawford.org" }
+    { "name": "Jason Crawford", "email": "jason@jasoncrawford.org" },
+    { "name": "Ray Myers", "email": "ray.myers@gmail.com" }
   ],
   "dependencies": {},
   "license": "MIT",

@@ -475,6 +475,7 @@ This function performs multiple inflection methods on a string.
 - Patrick Mowrer
 - Greger Olsson
 - Jason Crawford <jason@jasoncrawford.org>
+- Ray Myers <ray.myers@gmail.com>
 
 
 ## License
