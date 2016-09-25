@@ -1,5 +1,11 @@
 # History
 
+## 1.11.0 / 2016-04-20
+- [update packages] mocha->3.0.2, should->11.1.0
+- [bug fix] `inflection.transform` in ES6
+
+
+
 ## 1.10.0 / 2016-04-20
 - [update packages] should->8.3.1
 - [bug fix] `campus` plural & singular form
