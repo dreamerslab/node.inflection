@@ -34,6 +34,10 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'goose' ).should.equal( 'geese' );
     inflection.pluralize( 'tooth' ).should.equal( 'teeth' );
     inflection.pluralize( 'teeth' ).should.equal( 'teeth' );
+    inflection.pluralize( 'knife' ).should.equal( 'knives' );
+    inflection.pluralize( 'half' ).should.equal( 'halves' );
+    inflection.pluralize( 'cave' ).should.equal( 'caves' );
+    inflection.pluralize( 'save' ).should.equal( 'saves' );
     inflection.pluralize( 'street' ).should.equal( 'streets' );
     inflection.pluralize( 'streets' ).should.equal( 'streets' );
     inflection.pluralize( 'data' ).should.equal( 'data' );
@@ -77,6 +81,10 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'geese' ).should.equal( 'goose' );
     inflection.singularize( 'teeth' ).should.equal( 'tooth' );
     inflection.singularize( 'tooth' ).should.equal( 'tooth' );
+    inflection.singularize( 'knives' ).should.equal( 'knife' );
+    inflection.singularize( 'halves' ).should.equal( 'half' );
+    inflection.singularize( 'caves' ).should.equal( 'cave' );
+    inflection.singularize( 'saves' ).should.equal( 'save' );
     inflection.singularize( 'street' ).should.equal( 'street' );
     inflection.singularize( 'streets' ).should.equal( 'street' );
     inflection.singularize( 'data' ).should.equal( 'datum' );
