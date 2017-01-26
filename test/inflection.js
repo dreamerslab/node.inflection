@@ -92,6 +92,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'criterion' ).should.equal( 'criterion' );
     inflection.singularize( 'genera' ).should.equal( 'genus' );
     inflection.singularize( 'genus' ).should.equal( 'genus' );
+    inflection.singularize( 'minus' ).should.equal( 'minus' );
 
   });
 });
