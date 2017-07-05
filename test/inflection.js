@@ -55,6 +55,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'criteria' ).should.equal( 'criteria' );
     inflection.pluralize( 'genus' ).should.equal( 'genera' );
     inflection.pluralize( 'genera' ).should.equal( 'genera' );
+    inflection.pluralize( 'grammar' ).should.equal( 'grammars' );
   });
 });
 
