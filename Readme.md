@@ -184,9 +184,9 @@ This function will pluralize or singularlize a String appropriately based on an 
 
 		var inflection = require( 'inflection' );
 
-		inflection.inflect( 'people' 1 ); // === 'person'
-		inflection.inflect( 'octopi' 1 ); // === 'octopus'
-		inflection.inflect( 'Hats' 1 ); // === 'Hat'
+		inflection.inflect( 'people', 1 ); // === 'person'
+		inflection.inflect( 'octopi', 1 ); // === 'octopus'
+		inflection.inflect( 'Hats', 1 ); // === 'Hat'
 		inflection.inflect( 'guys', 1 , 'person' ); // === 'person'
 		inflection.inflect( 'person', 2 ); // === 'people'
 		inflection.inflect( 'octopus', 2 ); // === 'octopi'
