@@ -213,6 +213,13 @@ describe( 'test .tableize', function (){
   });
 });
 
+describe( 'test .kebabize', function (){
+  it( 'should kebabize the given word', function (){
+    inflection.kebabize( 'people' ).should.equal( 'people' );
+    inflection.kebabize( 'MessageBusProperty' ).should.equal( 'message-bus-property' );
+  });
+});
+
 describe( 'test .classify', function (){
   it( 'should classify the given word', function (){
     inflection.classify( 'message_bus_properties' ).should.equal( 'MessageBusProperty' );
