@@ -21,7 +21,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'women' ).should.equal( 'women' );
     inflection.pluralize( 'woman' ).should.equal( 'women' );
     inflection.pluralize( 'person' ).should.equal( 'people' );
-    inflection.pluralize( 'octopus' ).should.equal( 'octopi' );
+    inflection.pluralize( 'octopus' ).should.equal( 'octopuses' );
     inflection.pluralize( 'human' ).should.equal( 'humans' );
     inflection.pluralize( 'aircraft' ).should.equal( 'aircraft' );
     inflection.pluralize( 'luck' ).should.equal( 'luck' );
@@ -71,7 +71,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'people' ).should.equal( 'person' );
     inflection.singularize( 'movies' ).should.equal( 'movie' );
     inflection.singularize( 'queries' ).should.equal( 'query' );
-    inflection.singularize( 'octopi' ).should.equal( 'octopus' );
+    inflection.singularize( 'octopuses' ).should.equal( 'octopus' );
     inflection.singularize( 'Hats' ).should.equal( 'Hat' );
     inflection.singularize( 'lives' ).should.equal( 'life' );
     inflection.singularize( 'baths' ).should.equal( 'bath' );
@@ -111,7 +111,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'people', 0 ).should.equal( 'people' );
     inflection.inflect( 'men', 0 ).should.equal( 'men' );
     inflection.inflect( 'person', 0 ).should.equal( 'people' );
-    inflection.inflect( 'octopus', 0 ).should.equal( 'octopi' );
+    inflection.inflect( 'octopus', 0 ).should.equal( 'octopuses' );
     inflection.inflect( 'Hat', 0 ).should.equal( 'Hats' );
     inflection.inflect( 'data', 0 ).should.equal( 'data' );
     inflection.inflect( 'meta', 0 ).should.equal( 'meta' );
@@ -120,7 +120,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'people', 2 ).should.equal( 'people' );
     inflection.inflect( 'men', 2 ).should.equal( 'men' );
     inflection.inflect( 'person', 2 ).should.equal( 'people' );
-    inflection.inflect( 'octopus', 2 ).should.equal( 'octopi' );
+    inflection.inflect( 'octopus', 2 ).should.equal( 'octopuses' );
     inflection.inflect( 'Hat', 2 ).should.equal( 'Hats' );
     inflection.inflect( 'data', 2 ).should.equal( 'data' );
     inflection.inflect( 'meta', 2 ).should.equal( 'meta' );
@@ -134,7 +134,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'people', 1 ).should.equal( 'person' );
     inflection.inflect( 'movies', 1 ).should.equal( 'movie' );
     inflection.inflect( 'queries', 1 ).should.equal( 'query' );
-    inflection.inflect( 'octopi', 1 ).should.equal( 'octopus' );
+    inflection.inflect( 'octopuses', 1 ).should.equal( 'octopus' );
     inflection.inflect( 'Hats', 1 ).should.equal( 'Hat' );
     inflection.inflect( 'data', 1 ).should.equal( 'datum' );
     inflection.inflect( 'meta', 1 ).should.equal( 'metum' );
