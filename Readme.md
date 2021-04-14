@@ -2,6 +2,7 @@
 
 A port of inflection-js to node.js module
 
+<a href="https://www.npmjs.com/package/inflection"><img src="https://img.shields.io/npm/v/inflection" alt="NPM Version" /></a>
 
 
 ## Description
