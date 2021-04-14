@@ -2,6 +2,7 @@
 
 A port of inflection-js to node.js module
 
+<a href="https://www.npmjs.com/package/inflection"><img src="https://img.shields.io/npm/v/inflection" alt="NPM Version" /></a>
 
 
 ## Description
@@ -184,9 +185,9 @@ This function will pluralize or singularlize a String appropriately based on an 
 
 		var inflection = require( 'inflection' );
 
-		inflection.inflect( 'people' 1 ); // === 'person'
-		inflection.inflect( 'octopi' 1 ); // === 'octopus'
-		inflection.inflect( 'Hats' 1 ); // === 'Hat'
+		inflection.inflect( 'people', 1 ); // === 'person'
+		inflection.inflect( 'octopi', 1 ); // === 'octopus'
+		inflection.inflect( 'Hats', 1 ); // === 'Hat'
 		inflection.inflect( 'guys', 1 , 'person' ); // === 'person'
 		inflection.inflect( 'person', 2 ); // === 'people'
 		inflection.inflect( 'octopus', 2 ); // === 'octopi'
