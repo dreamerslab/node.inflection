@@ -102,7 +102,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'genera' ).should.equal( 'genus' );
     inflection.singularize( 'genus' ).should.equal( 'genus' );
     inflection.singularize( 'minus' ).should.equal( 'minus' );
-
+    inflection.pluralize( 'grammars' ).should.equal( 'grammar' );
   });
 });
 
