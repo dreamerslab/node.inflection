@@ -104,7 +104,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'genus' ).should.equal( 'genus' );
     inflection.singularize( 'minus' ).should.equal( 'minus' );
     inflection.singularize( 'bonuses' ).should.equal( 'bonus' );
-    inflection.pluralize( 'grammars' ).should.equal( 'grammar' );
+    inflection.singularize( 'grammars' ).should.equal( 'grammar' );
   });
 });
 
