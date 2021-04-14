@@ -55,6 +55,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'criteria' ).should.equal( 'criteria' );
     inflection.pluralize( 'genus' ).should.equal( 'genera' );
     inflection.pluralize( 'genera' ).should.equal( 'genera' );
+    inflection.pluralize( 'bonus' ).should.equal( 'bonuses' );
   });
 });
 
@@ -101,6 +102,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'genera' ).should.equal( 'genus' );
     inflection.singularize( 'genus' ).should.equal( 'genus' );
     inflection.singularize( 'minus' ).should.equal( 'minus' );
+    inflection.singularize( 'bonuses' ).should.equal( 'bonus' );
 
   });
 });
