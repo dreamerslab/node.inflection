@@ -56,6 +56,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'genus' ).should.equal( 'genera' );
     inflection.pluralize( 'genera' ).should.equal( 'genera' );
     inflection.pluralize( 'bonus' ).should.equal( 'bonuses' );
+    inflection.pluralize( 'grammar' ).should.equal( 'grammars' );
   });
 });
 
@@ -103,7 +104,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'genus' ).should.equal( 'genus' );
     inflection.singularize( 'minus' ).should.equal( 'minus' );
     inflection.singularize( 'bonuses' ).should.equal( 'bonus' );
-
+    inflection.singularize( 'grammars' ).should.equal( 'grammar' );
   });
 });
 
