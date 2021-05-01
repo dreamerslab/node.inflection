@@ -1,6 +1,6 @@
 # History
 
-## 1.12.1 / 2021-05-01
+## 1.13.0 / 2021-05-01
 
 - [update packages] mocha->8.3.2, should->13.2.3
 - [bug fix] `grammar` plural form
