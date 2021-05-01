@@ -1,5 +1,11 @@
 # History
 
+## 1.13.1 / 2021-05-21
+
+- [fix] use correct version for `inflector.version`
+- [build] reduce npm bundle size by excluding more files
+- [build] use terser to create a minified file
+
 ## 1.13.0 / 2021-05-01
 
 - [update packages] mocha->8.3.2, should->13.2.3
