@@ -1,5 +1,15 @@
 # History
 
+## 1.12.1 / 2021-05-01
+
+- [update packages] mocha->8.3.2, should->13.2.3
+- [bug fix] `grammar` plural form
+- [bug fix] `bonus` plural form
+- [bug fix] `octopus` plural form
+- [bug fix] `virus` plural form
+- [info] add LICENSE file
+- [info] additional maintainer @p-kuen. @ben-lin thanks for your trust!
+
 ## 1.12.0 / 2017-01-27
 
 - [update packages] mocha->3.2.0, should->11.2.0
