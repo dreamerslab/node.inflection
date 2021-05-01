@@ -89,7 +89,8 @@
   ],
   "devDependencies": {
     "mocha": "^8.3.2",
-    "should": "^13.2.3"
+    "should": "^13.2.3",
+    "terser": "^5.7.0"
   },
   "main": "./lib/inflection.js",
   "repository": {
@@ -101,6 +102,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "minify": "terser lib/inflection.js -o inflection.min.js -c -m"
   }
 }
