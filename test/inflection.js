@@ -57,6 +57,7 @@ describe( 'test .pluralize', function (){
     inflection.pluralize( 'genera' ).should.equal( 'genera' );
     inflection.pluralize( 'bonus' ).should.equal( 'bonuses' );
     inflection.pluralize( 'grammar' ).should.equal( 'grammars' );
+    inflection.pluralize( 'drive' ).should.equal( 'drives' );
   });
 });
 
@@ -105,6 +106,7 @@ describe( 'test .singularize', function (){
     inflection.singularize( 'minus' ).should.equal( 'minus' );
     inflection.singularize( 'bonuses' ).should.equal( 'bonus' );
     inflection.singularize( 'grammars' ).should.equal( 'grammar' );
+    inflection.singularize( 'drives' ).should.equal( 'drive' );
   });
 });
 
@@ -119,6 +121,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'data', 0 ).should.equal( 'data' );
     inflection.inflect( 'meta', 0 ).should.equal( 'meta' );
     inflection.inflect( 'person', 0, 'guy', 'guys' ).should.equal( 'guys' );
+    inflection.inflect( 'drive', 0 ).should.equal( 'drives' );
     // greater than 1 should use plural state
     inflection.inflect( 'people', 2 ).should.equal( 'people' );
     inflection.inflect( 'men', 2 ).should.equal( 'men' );
@@ -128,6 +131,7 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'data', 2 ).should.equal( 'data' );
     inflection.inflect( 'meta', 2 ).should.equal( 'meta' );
     inflection.inflect( 'person', 2, 'guy', 'guys' ).should.equal( 'guys' );
+    inflection.inflect( 'drive', 2 ).should.equal( 'drives' );
     // 1 should use singular state
     inflection.inflect( 'status', 1 ).should.equal( 'status' );
     inflection.inflect( 'child', 1 ).should.equal( 'child' );
@@ -144,6 +148,8 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'guys', 1, 'person', 'people' ).should.equal( 'person' );
     // not a number should return original value
     inflection.inflect( 'original', 'not a number' ).should.equal( 'original' );
+    inflection.inflect( 'drive', 1 ).should.equal( 'drive' );
+    inflection.inflect( 'drives', 1 ).should.equal( 'drive' );
   });
 });
 
