@@ -150,6 +150,9 @@ describe( 'test .inflect', function (){
     inflection.inflect( 'original', 'not a number' ).should.equal( 'original' );
     inflection.inflect( 'drive', 1 ).should.equal( 'drive' );
     inflection.inflect( 'drives', 1 ).should.equal( 'drive' );
+    // decimal numbers should use plural state
+    inflection.inflect( 'inches', 1.5 ).should.equal( 'inches' );
+    inflection.inflect( 'inches', 1.0 ).should.equal( 'inch' );
   });
 });
 
