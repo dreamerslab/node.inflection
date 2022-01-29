@@ -1,5 +1,11 @@
 # History
 
+## 1.13.2 / 2022-01-29
+
+- [fix] `drives` singular form
+- [feat] allow `inflect` to use floats
+- [chore] upgrade packages
+
 ## 1.13.1 / 2021-05-21
 
 - [fix] use correct version for `inflector.version`
