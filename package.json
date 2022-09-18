@@ -85,6 +85,10 @@
     {
       "name": "Dillon Shook",
       "email": "dshook@alumni.nmt.edu"
+    },
+    {
+      "name": "Patrick Kuen",
+      "email": "p.kuen@cloudacy.com"
     }
   ],
   "devDependencies": {
