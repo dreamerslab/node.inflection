@@ -15,7 +15,7 @@
  * @returns Return index position in the Array of the passed item.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.indexOf([ 'hi','there' ], 'guys' ); // === -1
  *     inflection.indexOf([ 'hi','there' ], 'hi' ); // === 0
@@ -28,7 +28,7 @@ export declare function indexOf<T>(arr: T[], item: T, fromIndex?: number, compar
  * @returns Singular English language nouns are returned in plural form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.pluralize( 'person' ); // === 'people'
  *     inflection.pluralize( 'octopus' ); // === 'octopuses'
@@ -43,7 +43,7 @@ export declare function pluralize(str: string, plural?: string): string;
  * @returns Plural English language nouns are returned in singular form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.singularize( 'people' ); // === 'person'
  *     inflection.singularize( 'octopuses' ); // === 'octopus'
@@ -60,7 +60,7 @@ export declare function singularize(str: string, singular?: string): string;
  * @returns English language nouns are returned in the plural or singular form based on the count.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.inflect( 'people' 1 ); // === 'person'
  *     inflection.inflect( 'octopuses' 1 ); // === 'octopus'
@@ -82,7 +82,7 @@ export declare function inflect(str: string, count: number, singular?: string, p
  *                  additionally '/' is translated to '::'
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.camelize( 'message_properties' ); // === 'MessageProperties'
  *     inflection.camelize( 'message_properties', true ); // === 'messageProperties'
@@ -97,7 +97,7 @@ export declare function camelize(str: string, lowFirstLetter?: boolean): string;
  *                  additionally '::' is translated to '/'.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.underscore( 'MessageProperties' ); // === 'message_properties'
  *     inflection.underscore( 'messageProperties' ); // === 'message_properties'
@@ -112,7 +112,7 @@ export declare function underscore(str: string, allUpperCase?: boolean): string;
  * @returns Lower case underscored words will be returned in humanized form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.humanize( 'message_properties' ); // === 'Message properties'
  *     inflection.humanize( 'message_properties', true ); // === 'message properties'
@@ -124,7 +124,7 @@ export declare function humanize(str: string, lowFirstLetter?: boolean): string;
  * @returns All characters will be lower case and the first will be upper.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.capitalize( 'message_properties' ); // === 'Message_properties'
  *     inflection.capitalize( 'message properties', true ); // === 'Message properties'
@@ -136,7 +136,7 @@ export declare function capitalize(str: string): string;
  * @returns Replaces all spaces or underscores with dashes.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.dasherize( 'message_properties' ); // === 'message-properties'
  *     inflection.dasherize( 'Message Properties' ); // === 'Message-Properties'
@@ -148,7 +148,7 @@ export declare function dasherize(str: string): string;
  * @returns Capitalizes words as you would for a book title.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.titleize( 'message_properties' ); // === 'Message Properties'
  *     inflection.titleize( 'message properties to keep' ); // === 'Message Properties to Keep'
@@ -160,7 +160,7 @@ export declare function titleize(str: string): string;
  * @returns Removes module names leaving only class names.(Ruby style)
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.demodulize( 'Message::Bus::Properties' ); // === 'Properties'
  */
@@ -171,7 +171,7 @@ export declare function demodulize(str: string): string;
  * @returns Return camel cased words into their underscored plural form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.tableize( 'MessageBusProperty' ); // === 'message_bus_properties'
  */
@@ -182,7 +182,7 @@ export declare function tableize(str: string): string;
  * @returns Underscored plural nouns become the camel cased singular form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.classify( 'message_bus_properties' ); // === 'MessageBusProperty'
  */
@@ -195,7 +195,7 @@ export declare function classify(str: string): string;
    * @returns Underscored plural nouns become the camel cased singular form.
    * @example
    *
-   *     var inflection = require( 'inflection' );
+   *     const inflection = require( 'inflection' );
    *
    *     inflection.foreign_key( 'MessageBusProperty' ); // === 'message_bus_property_id'
    *     inflection.foreign_key( 'MessageBusProperty', true ); // === 'message_bus_propertyid'
@@ -207,7 +207,7 @@ export declare function foreignKey(str: string, dropIdUbar?: boolean): string;
  * @returns Return all found numbers their sequence like '22nd'.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.ordinalize( 'the 1 pitch' ); // === 'the 1st pitch'
  */
@@ -234,7 +234,7 @@ declare const transformFunctions: {
  * @returns
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.transform( 'all job', [ 'pluralize', 'capitalize', 'dasherize' ]); // === 'All-jobs'
  */

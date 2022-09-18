@@ -333,7 +333,7 @@ const uncountableWords = [
  * @description These rules translate from the singular form of a noun to its plural form.
  */
 
-var regex = {
+const regex = {
   plural: {
     men: new RegExp("^(m|wom)en$", "gi"),
     people: new RegExp("(pe)ople$", "gi"),
@@ -552,7 +552,7 @@ const singularRules: [RegExp, string?][] = [
 /**
  * @description This is a list of words that should not be capitalized for title case.
  */
-var non_titlecased_words = [
+const nonTitlecasedWords = [
   "and",
   "or",
   "nor",
@@ -580,7 +580,7 @@ var non_titlecased_words = [
 /**
  * @description These are regular expressions used for converting between String formats.
  */
-const id_suffix = new RegExp("(_ids|_id)$", "g");
+const idSuffix = new RegExp("(_ids|_id)$", "g");
 const underbar = new RegExp("_", "g");
 const spaceOrUnderbar = new RegExp("[ _]", "g");
 const uppercase = new RegExp("([A-Z])", "g");
@@ -588,7 +588,6 @@ const underbarPrefix = new RegExp("^_");
 
 /**
  * A helper method that applies rules based replacement to a String.
- * @function
  * @param str String to modify and return based on the passed rules.
  * @param rules Regexp to match paired with String to use for replacement
  * @param skip Strings to skip if they match
@@ -596,7 +595,7 @@ const underbarPrefix = new RegExp("^_");
  * @returns Return passed String modified by passed rules.
  * @example
  *
- *     this._apply_rules( 'cows', singular_rules ); // === 'cow'
+ *     applyRules( 'cows', singular_rules ); // === 'cow'
  */
 function applyRules(
   str: string,
@@ -610,10 +609,9 @@ function applyRules(
     const ignore = indexOf(skip, str.toLowerCase()) > -1;
 
     if (!ignore) {
-      var i = 0;
-      var j = rules.length;
+      const j = rules.length;
 
-      for (; i < j; i++) {
+      for (let i = 0; i < j; i++) {
         if (str.match(rules[i][0])) {
           const replaceRule = rules[i][1];
           if (replaceRule !== undefined) {
@@ -637,7 +635,7 @@ function applyRules(
  * @returns Return index position in the Array of the passed item.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.indexOf([ 'hi','there' ], 'guys' ); // === -1
  *     inflection.indexOf([ 'hi','there' ], 'hi' ); // === 0
@@ -653,9 +651,8 @@ export function indexOf<T>(
   }
 
   let index = -1;
-  let i = fromIndex;
 
-  for (; i < arr.length; i++) {
+  for (let i = fromIndex; i < arr.length; i++) {
     if (arr[i] === item || (compareFunc && compareFunc(arr[i], item))) {
       index = i;
       break;
@@ -672,7 +669,7 @@ export function indexOf<T>(
  * @returns Singular English language nouns are returned in plural form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.pluralize( 'person' ); // === 'people'
  *     inflection.pluralize( 'octopus' ); // === 'octopuses'
@@ -690,7 +687,7 @@ export function pluralize(str: string, plural?: string) {
  * @returns Plural English language nouns are returned in singular form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.singularize( 'people' ); // === 'person'
  *     inflection.singularize( 'octopuses' ); // === 'octopus'
@@ -710,7 +707,7 @@ export function singularize(str: string, singular?: string) {
  * @returns English language nouns are returned in the plural or singular form based on the count.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.inflect( 'people' 1 ); // === 'person'
  *     inflection.inflect( 'octopuses' 1 ); // === 'octopus'
@@ -746,39 +743,38 @@ export function inflect(
  *                  additionally '/' is translated to '::'
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.camelize( 'message_properties' ); // === 'MessageProperties'
  *     inflection.camelize( 'message_properties', true ); // === 'messageProperties'
  */
 export function camelize(str: string, lowFirstLetter?: boolean) {
-  const str_path = str.split("/");
-  let i = 0;
-  const j = str_path.length;
-  let str_arr: string[], init_x: any, k: number, l: number, first: string;
+  const strPath = str.split("/");
+  const j = strPath.length;
+  let strArr: string[], k: number, l: number, first: string;
 
-  for (; i < j; i++) {
-    str_arr = str_path[i].split("_");
+  for (let i = 0; i < j; i++) {
+    strArr = strPath[i].split("_");
     k = 0;
-    l = str_arr.length;
+    l = strArr.length;
 
     for (; k < l; k++) {
       if (k !== 0) {
-        str_arr[k] = str_arr[k].toLowerCase();
+        strArr[k] = strArr[k].toLowerCase();
       }
 
-      first = str_arr[k].charAt(0);
+      first = strArr[k].charAt(0);
       first =
         lowFirstLetter && i === 0 && k === 0
           ? first.toLowerCase()
           : first.toUpperCase();
-      str_arr[k] = first + str_arr[k].substring(1);
+      strArr[k] = first + strArr[k].substring(1);
     }
 
-    str_path[i] = str_arr.join("");
+    strPath[i] = strArr.join("");
   }
 
-  return str_path.join("::");
+  return strPath.join("::");
 }
 
 /**
@@ -790,7 +786,7 @@ export function camelize(str: string, lowFirstLetter?: boolean) {
  *                  additionally '::' is translated to '/'.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.underscore( 'MessageProperties' ); // === 'message_properties'
  *     inflection.underscore( 'messageProperties' ); // === 'message_properties'
@@ -799,16 +795,15 @@ export function camelize(str: string, lowFirstLetter?: boolean) {
 export function underscore(str: string, allUpperCase?: boolean) {
   if (allUpperCase && str === str.toUpperCase()) return str;
 
-  var str_path = str.split("::");
-  var i = 0;
-  var j = str_path.length;
+  const strPath = str.split("::");
+  const j = strPath.length;
 
-  for (; i < j; i++) {
-    str_path[i] = str_path[i].replace(uppercase, "_$1");
-    str_path[i] = str_path[i].replace(underbarPrefix, "");
+  for (let i = 0; i < j; i++) {
+    strPath[i] = strPath[i].replace(uppercase, "_$1");
+    strPath[i] = strPath[i].replace(underbarPrefix, "");
   }
 
-  return str_path.join("/").toLowerCase();
+  return strPath.join("/").toLowerCase();
 }
 
 /**
@@ -819,14 +814,14 @@ export function underscore(str: string, allUpperCase?: boolean) {
  * @returns Lower case underscored words will be returned in humanized form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.humanize( 'message_properties' ); // === 'Message properties'
  *     inflection.humanize( 'message_properties', true ); // === 'message properties'
  */
 export function humanize(str: string, lowFirstLetter?: boolean) {
   str = str.toLowerCase();
-  str = str.replace(id_suffix, "");
+  str = str.replace(idSuffix, "");
   str = str.replace(underbar, " ");
 
   if (!lowFirstLetter) {
@@ -842,7 +837,7 @@ export function humanize(str: string, lowFirstLetter?: boolean) {
  * @returns All characters will be lower case and the first will be upper.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.capitalize( 'message_properties' ); // === 'Message_properties'
  *     inflection.capitalize( 'message properties', true ); // === 'Message properties'
@@ -859,7 +854,7 @@ export function capitalize(str: string) {
  * @returns Replaces all spaces or underscores with dashes.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.dasherize( 'message_properties' ); // === 'message-properties'
  *     inflection.dasherize( 'Message Properties' ); // === 'Message-Properties'
@@ -874,33 +869,31 @@ export function dasherize(str: string) {
  * @returns Capitalizes words as you would for a book title.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.titleize( 'message_properties' ); // === 'Message Properties'
  *     inflection.titleize( 'message properties to keep' ); // === 'Message Properties to Keep'
  */
 export function titleize(str: string) {
   str = str.toLowerCase().replace(underbar, " ");
-  var str_arr = str.split(" ");
-  var i = 0;
-  var j = str_arr.length;
-  var d: any[], k: number, l: number;
+  const strArr = str.split(" ");
+  const j = strArr.length;
+  let d: string[], l: number;
 
-  for (; i < j; i++) {
-    d = str_arr[i].split("-");
-    k = 0;
+  for (let i = 0; i < j; i++) {
+    d = strArr[i].split("-");
     l = d.length;
 
-    for (; k < l; k++) {
-      if (indexOf(non_titlecased_words, d[k].toLowerCase()) < 0) {
+    for (let k = 0; k < l; k++) {
+      if (indexOf(nonTitlecasedWords, d[k].toLowerCase()) < 0) {
         d[k] = capitalize(d[k]);
       }
     }
 
-    str_arr[i] = d.join("-");
+    strArr[i] = d.join("-");
   }
 
-  str = str_arr.join(" ");
+  str = strArr.join(" ");
   str = str.substring(0, 1).toUpperCase() + str.substring(1);
 
   return str;
@@ -912,14 +905,14 @@ export function titleize(str: string) {
  * @returns Removes module names leaving only class names.(Ruby style)
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.demodulize( 'Message::Bus::Properties' ); // === 'Properties'
  */
 export function demodulize(str: string) {
-  var str_arr = str.split("::");
+  const strArr = str.split("::");
 
-  return str_arr[str_arr.length - 1];
+  return strArr[strArr.length - 1];
 }
 
 /**
@@ -928,7 +921,7 @@ export function demodulize(str: string) {
  * @returns Return camel cased words into their underscored plural form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.tableize( 'MessageBusProperty' ); // === 'message_bus_properties'
  */
@@ -945,7 +938,7 @@ export function tableize(str: string) {
  * @returns Underscored plural nouns become the camel cased singular form.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.classify( 'message_bus_properties' ); // === 'MessageBusProperty'
  */
@@ -964,7 +957,7 @@ export function classify(str: string) {
    * @returns Underscored plural nouns become the camel cased singular form.
    * @example
    *
-   *     var inflection = require( 'inflection' );
+   *     const inflection = require( 'inflection' );
    *
    *     inflection.foreign_key( 'MessageBusProperty' ); // === 'message_bus_property_id'
    *     inflection.foreign_key( 'MessageBusProperty', true ); // === 'message_bus_propertyid'
@@ -982,22 +975,21 @@ export function foreignKey(str: string, dropIdUbar?: boolean) {
  * @returns Return all found numbers their sequence like '22nd'.
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.ordinalize( 'the 1 pitch' ); // === 'the 1st pitch'
  */
 export function ordinalize(str: string) {
-  var str_arr = str.split(" ");
-  var i = 0;
-  var j = str_arr.length;
+  const strArr = str.split(" ");
+  const j = strArr.length;
 
-  for (; i < j; i++) {
-    var k = parseInt(str_arr[i], 10);
+  for (let i = 0; i < j; i++) {
+    const k = parseInt(strArr[i], 10);
 
     if (!isNaN(k)) {
-      var ltd = str_arr[i].substring(str_arr[i].length - 2);
-      var ld = str_arr[i].substring(str_arr[i].length - 1);
-      var suf = "th";
+      const ltd = strArr[i].substring(strArr[i].length - 2);
+      const ld = strArr[i].substring(strArr[i].length - 1);
+      let suf = "th";
 
       if (ltd != "11" && ltd != "12" && ltd != "13") {
         if (ld === "1") {
@@ -1009,11 +1001,11 @@ export function ordinalize(str: string) {
         }
       }
 
-      str_arr[i] += suf;
+      strArr[i] += suf;
     }
   }
 
-  return str_arr.join(" ");
+  return strArr.join(" ");
 }
 
 const transformFunctions = {
@@ -1039,7 +1031,7 @@ const transformFunctions = {
  * @returns
  * @example
  *
- *     var inflection = require( 'inflection' );
+ *     const inflection = require( 'inflection' );
  *
  *     inflection.transform( 'all job', [ 'pluralize', 'capitalize', 'dasherize' ]); // === 'All-jobs'
  */
@@ -1047,10 +1039,9 @@ export function transform(
   str: string,
   arr: (keyof typeof transformFunctions)[]
 ) {
-  let i = 0;
   const j = arr.length;
 
-  for (; i < j; i++) {
+  for (let i = 0; i < j; i++) {
     const method = arr[i];
     const methodFn = transformFunctions[method];
 
