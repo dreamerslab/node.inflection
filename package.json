@@ -88,8 +88,8 @@
     }
   ],
   "devDependencies": {
-    "terser": "^5.10.0",
-    "vitest": "^0.2.8"
+    "terser": "^5.15.0",
+    "vitest": "^0.23.4"
   },
   "main": "./lib/inflection.js",
   "repository": {
