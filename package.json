@@ -106,6 +106,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "test": "vitest"
+    "test": "vitest",
+    "prepublishOnly": "npm run test -- --run && npm run build"
   }
 }
