@@ -1,5 +1,8 @@
 # History
 
+## 1.13.3 and later
+Please see the [GitHub Releases](https://github.com/dreamerslab/node.inflection/releases) for release notes.
+
 ## 1.13.2 / 2022-01-29
 
 - [fix] `drives` singular form
