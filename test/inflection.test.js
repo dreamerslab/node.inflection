@@ -58,6 +58,7 @@ describe("test .pluralize", function () {
     expect(inflection.pluralize("bonus")).toEqual("bonuses");
     expect(inflection.pluralize("grammar")).toEqual("grammars");
     expect(inflection.pluralize("drive")).toEqual("drives");
+    expect(inflection.pluralize("database")).toEqual("databases");
   });
 });
 
@@ -107,6 +108,7 @@ describe("test .singularize", function () {
     expect(inflection.singularize("bonuses")).toEqual("bonus");
     expect(inflection.singularize("grammars")).toEqual("grammar");
     expect(inflection.singularize("drives")).toEqual("drive");
+    expect(inflection.singularize("databases")).toEqual("database");
   });
 });
 
