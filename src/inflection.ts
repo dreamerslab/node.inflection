@@ -13,320 +13,320 @@
  */
 const uncountableWords = [
   // 'access',
-  "accommodation",
-  "adulthood",
-  "advertising",
-  "advice",
-  "aggression",
-  "aid",
-  "air",
-  "aircraft",
-  "alcohol",
-  "anger",
-  "applause",
-  "arithmetic",
+  'accommodation',
+  'adulthood',
+  'advertising',
+  'advice',
+  'aggression',
+  'aid',
+  'air',
+  'aircraft',
+  'alcohol',
+  'anger',
+  'applause',
+  'arithmetic',
   // 'art',
-  "assistance",
-  "athletics",
+  'assistance',
+  'athletics',
   // 'attention',
 
-  "bacon",
-  "baggage",
+  'bacon',
+  'baggage',
   // 'ballet',
   // 'beauty',
-  "beef",
+  'beef',
   // 'beer',
   // 'behavior',
-  "biology",
+  'biology',
   // 'billiards',
-  "blood",
-  "botany",
+  'blood',
+  'botany',
   // 'bowels',
-  "bread",
+  'bread',
   // 'business',
-  "butter",
+  'butter',
 
-  "carbon",
-  "cardboard",
-  "cash",
-  "chalk",
-  "chaos",
-  "chess",
-  "crossroads",
-  "countryside",
+  'carbon',
+  'cardboard',
+  'cash',
+  'chalk',
+  'chaos',
+  'chess',
+  'crossroads',
+  'countryside',
 
   // 'damage',
-  "dancing",
+  'dancing',
   // 'danger',
-  "deer",
+  'deer',
   // 'delight',
   // 'dessert',
-  "dignity",
-  "dirt",
+  'dignity',
+  'dirt',
   // 'distribution',
-  "dust",
+  'dust',
 
-  "economics",
-  "education",
-  "electricity",
+  'economics',
+  'education',
+  'electricity',
   // 'employment',
   // 'energy',
-  "engineering",
-  "enjoyment",
+  'engineering',
+  'enjoyment',
   // 'entertainment',
-  "envy",
-  "equipment",
-  "ethics",
-  "evidence",
-  "evolution",
+  'envy',
+  'equipment',
+  'ethics',
+  'evidence',
+  'evolution',
 
   // 'failure',
   // 'faith',
-  "fame",
-  "fiction",
+  'fame',
+  'fiction',
   // 'fish',
-  "flour",
-  "flu",
-  "food",
+  'flour',
+  'flu',
+  'food',
   // 'freedom',
   // 'fruit',
-  "fuel",
-  "fun",
+  'fuel',
+  'fun',
   // 'funeral',
-  "furniture",
+  'furniture',
 
-  "gallows",
-  "garbage",
-  "garlic",
+  'gallows',
+  'garbage',
+  'garlic',
   // 'gas',
-  "genetics",
+  'genetics',
   // 'glass',
-  "gold",
-  "golf",
-  "gossip",
+  'gold',
+  'golf',
+  'gossip',
   // 'grass',
-  "gratitude",
-  "grief",
+  'gratitude',
+  'grief',
   // 'ground',
-  "guilt",
-  "gymnastics",
+  'guilt',
+  'gymnastics',
 
   // 'hair',
-  "happiness",
-  "hardware",
-  "harm",
-  "hate",
-  "hatred",
-  "health",
-  "heat",
+  'happiness',
+  'hardware',
+  'harm',
+  'hate',
+  'hatred',
+  'health',
+  'heat',
   // 'height',
-  "help",
-  "homework",
-  "honesty",
-  "honey",
-  "hospitality",
-  "housework",
-  "humour",
-  "hunger",
-  "hydrogen",
+  'help',
+  'homework',
+  'honesty',
+  'honey',
+  'hospitality',
+  'housework',
+  'humour',
+  'hunger',
+  'hydrogen',
 
-  "ice",
-  "importance",
-  "inflation",
-  "information",
+  'ice',
+  'importance',
+  'inflation',
+  'information',
   // 'injustice',
-  "innocence",
+  'innocence',
   // 'intelligence',
-  "iron",
-  "irony",
+  'iron',
+  'irony',
 
-  "jam",
+  'jam',
   // 'jealousy',
   // 'jelly',
-  "jewelry",
+  'jewelry',
   // 'joy',
-  "judo",
+  'judo',
   // 'juice',
   // 'justice',
 
-  "karate",
+  'karate',
   // 'kindness',
-  "knowledge",
+  'knowledge',
 
   // 'labour',
-  "lack",
+  'lack',
   // 'land',
-  "laughter",
-  "lava",
-  "leather",
-  "leisure",
-  "lightning",
-  "linguine",
-  "linguini",
-  "linguistics",
-  "literature",
-  "litter",
-  "livestock",
-  "logic",
-  "loneliness",
+  'laughter',
+  'lava',
+  'leather',
+  'leisure',
+  'lightning',
+  'linguine',
+  'linguini',
+  'linguistics',
+  'literature',
+  'litter',
+  'livestock',
+  'logic',
+  'loneliness',
   // 'love',
-  "luck",
-  "luggage",
+  'luck',
+  'luggage',
 
-  "macaroni",
-  "machinery",
-  "magic",
+  'macaroni',
+  'machinery',
+  'magic',
   // 'mail',
-  "management",
-  "mankind",
-  "marble",
-  "mathematics",
-  "mayonnaise",
-  "measles",
+  'management',
+  'mankind',
+  'marble',
+  'mathematics',
+  'mayonnaise',
+  'measles',
   // 'meat',
   // 'metal',
-  "methane",
-  "milk",
-  "minus",
-  "money",
+  'methane',
+  'milk',
+  'minus',
+  'money',
   // 'moose',
-  "mud",
-  "music",
-  "mumps",
+  'mud',
+  'music',
+  'mumps',
 
-  "nature",
-  "news",
-  "nitrogen",
-  "nonsense",
-  "nurture",
-  "nutrition",
+  'nature',
+  'news',
+  'nitrogen',
+  'nonsense',
+  'nurture',
+  'nutrition',
 
-  "obedience",
-  "obesity",
+  'obedience',
+  'obesity',
   // 'oil',
-  "oxygen",
+  'oxygen',
 
   // 'paper',
   // 'passion',
-  "pasta",
-  "patience",
+  'pasta',
+  'patience',
   // 'permission',
-  "physics",
-  "poetry",
-  "pollution",
-  "poverty",
+  'physics',
+  'poetry',
+  'pollution',
+  'poverty',
   // 'power',
-  "pride",
+  'pride',
   // 'production',
   // 'progress',
   // 'pronunciation',
-  "psychology",
-  "publicity",
-  "punctuation",
+  'psychology',
+  'publicity',
+  'punctuation',
 
   // 'quality',
   // 'quantity',
-  "quartz",
+  'quartz',
 
-  "racism",
+  'racism',
   // 'rain',
   // 'recreation',
-  "relaxation",
-  "reliability",
-  "research",
-  "respect",
-  "revenge",
-  "rice",
-  "rubbish",
-  "rum",
+  'relaxation',
+  'reliability',
+  'research',
+  'respect',
+  'revenge',
+  'rice',
+  'rubbish',
+  'rum',
 
-  "safety",
+  'safety',
   // 'salad',
   // 'salt',
   // 'sand',
   // 'satire',
-  "scenery",
-  "seafood",
-  "seaside",
-  "series",
-  "shame",
-  "sheep",
-  "shopping",
+  'scenery',
+  'seafood',
+  'seaside',
+  'series',
+  'shame',
+  'sheep',
+  'shopping',
   // 'silence',
-  "sleep",
+  'sleep',
   // 'slang'
-  "smoke",
-  "smoking",
-  "snow",
-  "soap",
-  "software",
-  "soil",
+  'smoke',
+  'smoking',
+  'snow',
+  'soap',
+  'software',
+  'soil',
   // 'sorrow',
   // 'soup',
-  "spaghetti",
+  'spaghetti',
   // 'speed',
-  "species",
+  'species',
   // 'spelling',
   // 'sport',
-  "steam",
+  'steam',
   // 'strength',
-  "stuff",
-  "stupidity",
+  'stuff',
+  'stupidity',
   // 'success',
   // 'sugar',
-  "sunshine",
-  "symmetry",
+  'sunshine',
+  'symmetry',
 
   // 'tea',
-  "tennis",
-  "thirst",
-  "thunder",
-  "timber",
+  'tennis',
+  'thirst',
+  'thunder',
+  'timber',
   // 'time',
   // 'toast',
   // 'tolerance',
   // 'trade',
-  "traffic",
-  "transportation",
+  'traffic',
+  'transportation',
   // 'travel',
-  "trust",
+  'trust',
 
   // 'understanding',
-  "underwear",
-  "unemployment",
-  "unity",
+  'underwear',
+  'unemployment',
+  'unity',
   // 'usage',
 
-  "validity",
-  "veal",
-  "vegetation",
-  "vegetarianism",
-  "vengeance",
-  "violence",
+  'validity',
+  'veal',
+  'vegetation',
+  'vegetarianism',
+  'vengeance',
+  'violence',
   // 'vision',
-  "vitality",
+  'vitality',
 
-  "warmth",
+  'warmth',
   // 'water',
-  "wealth",
-  "weather",
+  'wealth',
+  'weather',
   // 'weight',
-  "welfare",
-  "wheat",
+  'welfare',
+  'wheat',
   // 'whiskey',
   // 'width',
-  "wildlife",
+  'wildlife',
   // 'wine',
-  "wisdom",
+  'wisdom',
   // 'wood',
   // 'wool',
   // 'work',
 
   // 'yeast',
-  "yoga",
+  'yoga',
 
-  "zinc",
-  "zoology",
+  'zinc',
+  'zoology',
 ];
 
 /**
@@ -335,77 +335,77 @@ const uncountableWords = [
 
 const regex = {
   plural: {
-    men: new RegExp("^(m|wom)en$", "gi"),
-    people: new RegExp("(pe)ople$", "gi"),
-    children: new RegExp("(child)ren$", "gi"),
-    tia: new RegExp("([ti])a$", "gi"),
+    men: new RegExp('^(m|wom)en$', 'gi'),
+    people: new RegExp('(pe)ople$', 'gi'),
+    children: new RegExp('(child)ren$', 'gi'),
+    tia: new RegExp('([ti])a$', 'gi'),
     analyses: new RegExp(
-      "((a)naly|(b)a|(d)iagno|(p)arenthe|(p)rogno|(s)ynop|(t)he)ses$",
-      "gi"
+      '((a)naly|(b)a|(d)iagno|(p)arenthe|(p)rogno|(s)ynop|(t)he)ses$',
+      'gi'
     ),
-    databases: new RegExp("(database)s$", "gi"),
-    drives: new RegExp("(drive)s$", "gi"),
-    hives: new RegExp("(hi|ti)ves$", "gi"),
-    curves: new RegExp("(curve)s$", "gi"),
-    lrves: new RegExp("([lr])ves$", "gi"),
-    aves: new RegExp("([a])ves$", "gi"),
-    foves: new RegExp("([^fo])ves$", "gi"),
-    movies: new RegExp("(m)ovies$", "gi"),
-    aeiouyies: new RegExp("([^aeiouy]|qu)ies$", "gi"),
-    series: new RegExp("(s)eries$", "gi"),
-    xes: new RegExp("(x|ch|ss|sh)es$", "gi"),
-    mice: new RegExp("([m|l])ice$", "gi"),
-    buses: new RegExp("(bus)es$", "gi"),
-    oes: new RegExp("(o)es$", "gi"),
-    shoes: new RegExp("(shoe)s$", "gi"),
-    crises: new RegExp("(cris|ax|test)es$", "gi"),
-    octopuses: new RegExp("(octop|vir)uses$", "gi"),
-    aliases: new RegExp("(alias|canvas|status|campus)es$", "gi"),
-    summonses: new RegExp("^(summons|bonus)es$", "gi"),
-    oxen: new RegExp("^(ox)en", "gi"),
-    matrices: new RegExp("(matr)ices$", "gi"),
-    vertices: new RegExp("(vert|ind)ices$", "gi"),
-    feet: new RegExp("^feet$", "gi"),
-    teeth: new RegExp("^teeth$", "gi"),
-    geese: new RegExp("^geese$", "gi"),
-    quizzes: new RegExp("(quiz)zes$", "gi"),
-    whereases: new RegExp("^(whereas)es$", "gi"),
-    criteria: new RegExp("^(criteri)a$", "gi"),
-    genera: new RegExp("^genera$", "gi"),
-    ss: new RegExp("ss$", "gi"),
-    s: new RegExp("s$", "gi"),
+    databases: new RegExp('(database)s$', 'gi'),
+    drives: new RegExp('(drive)s$', 'gi'),
+    hives: new RegExp('(hi|ti)ves$', 'gi'),
+    curves: new RegExp('(curve)s$', 'gi'),
+    lrves: new RegExp('([lr])ves$', 'gi'),
+    aves: new RegExp('([a])ves$', 'gi'),
+    foves: new RegExp('([^fo])ves$', 'gi'),
+    movies: new RegExp('(m)ovies$', 'gi'),
+    aeiouyies: new RegExp('([^aeiouy]|qu)ies$', 'gi'),
+    series: new RegExp('(s)eries$', 'gi'),
+    xes: new RegExp('(x|ch|ss|sh)es$', 'gi'),
+    mice: new RegExp('([m|l])ice$', 'gi'),
+    buses: new RegExp('(bus)es$', 'gi'),
+    oes: new RegExp('(o)es$', 'gi'),
+    shoes: new RegExp('(shoe)s$', 'gi'),
+    crises: new RegExp('(cris|ax|test)es$', 'gi'),
+    octopuses: new RegExp('(octop|vir)uses$', 'gi'),
+    aliases: new RegExp('(alias|canvas|status|campus)es$', 'gi'),
+    summonses: new RegExp('^(summons|bonus)es$', 'gi'),
+    oxen: new RegExp('^(ox)en', 'gi'),
+    matrices: new RegExp('(matr)ices$', 'gi'),
+    vertices: new RegExp('(vert|ind)ices$', 'gi'),
+    feet: new RegExp('^feet$', 'gi'),
+    teeth: new RegExp('^teeth$', 'gi'),
+    geese: new RegExp('^geese$', 'gi'),
+    quizzes: new RegExp('(quiz)zes$', 'gi'),
+    whereases: new RegExp('^(whereas)es$', 'gi'),
+    criteria: new RegExp('^(criteri)a$', 'gi'),
+    genera: new RegExp('^genera$', 'gi'),
+    ss: new RegExp('ss$', 'gi'),
+    s: new RegExp('s$', 'gi'),
   },
 
   singular: {
-    man: new RegExp("^(m|wom)an$", "gi"),
-    person: new RegExp("(pe)rson$", "gi"),
-    child: new RegExp("(child)$", "gi"),
-    drive: new RegExp("(drive)$", "gi"),
-    ox: new RegExp("^(ox)$", "gi"),
-    axis: new RegExp("(ax|test)is$", "gi"),
-    octopus: new RegExp("(octop|vir)us$", "gi"),
-    alias: new RegExp("(alias|status|canvas|campus)$", "gi"),
-    summons: new RegExp("^(summons|bonus)$", "gi"),
-    bus: new RegExp("(bu)s$", "gi"),
-    buffalo: new RegExp("(buffal|tomat|potat)o$", "gi"),
-    tium: new RegExp("([ti])um$", "gi"),
-    sis: new RegExp("sis$", "gi"),
-    ffe: new RegExp("(?:([^f])fe|([lr])f)$", "gi"),
-    hive: new RegExp("(hi|ti)ve$", "gi"),
-    aeiouyy: new RegExp("([^aeiouy]|qu)y$", "gi"),
-    x: new RegExp("(x|ch|ss|sh)$", "gi"),
-    matrix: new RegExp("(matr)ix$", "gi"),
-    vertex: new RegExp("(vert|ind)ex$", "gi"),
-    mouse: new RegExp("([m|l])ouse$", "gi"),
-    foot: new RegExp("^foot$", "gi"),
-    tooth: new RegExp("^tooth$", "gi"),
-    goose: new RegExp("^goose$", "gi"),
-    quiz: new RegExp("(quiz)$", "gi"),
-    whereas: new RegExp("^(whereas)$", "gi"),
-    criterion: new RegExp("^(criteri)on$", "gi"),
-    genus: new RegExp("^genus$", "gi"),
-    s: new RegExp("s$", "gi"),
-    common: new RegExp("$", "gi"),
+    man: new RegExp('^(m|wom)an$', 'gi'),
+    person: new RegExp('(pe)rson$', 'gi'),
+    child: new RegExp('(child)$', 'gi'),
+    drive: new RegExp('(drive)$', 'gi'),
+    ox: new RegExp('^(ox)$', 'gi'),
+    axis: new RegExp('(ax|test)is$', 'gi'),
+    octopus: new RegExp('(octop|vir)us$', 'gi'),
+    alias: new RegExp('(alias|status|canvas|campus)$', 'gi'),
+    summons: new RegExp('^(summons|bonus)$', 'gi'),
+    bus: new RegExp('(bu)s$', 'gi'),
+    buffalo: new RegExp('(buffal|tomat|potat)o$', 'gi'),
+    tium: new RegExp('([ti])um$', 'gi'),
+    sis: new RegExp('sis$', 'gi'),
+    ffe: new RegExp('(?:([^f])fe|([lr])f)$', 'gi'),
+    hive: new RegExp('(hi|ti)ve$', 'gi'),
+    aeiouyy: new RegExp('([^aeiouy]|qu)y$', 'gi'),
+    x: new RegExp('(x|ch|ss|sh)$', 'gi'),
+    matrix: new RegExp('(matr)ix$', 'gi'),
+    vertex: new RegExp('(vert|ind)ex$', 'gi'),
+    mouse: new RegExp('([m|l])ouse$', 'gi'),
+    foot: new RegExp('^foot$', 'gi'),
+    tooth: new RegExp('^tooth$', 'gi'),
+    goose: new RegExp('^goose$', 'gi'),
+    quiz: new RegExp('(quiz)$', 'gi'),
+    whereas: new RegExp('^(whereas)$', 'gi'),
+    criterion: new RegExp('^(criteri)on$', 'gi'),
+    genus: new RegExp('^genus$', 'gi'),
+    s: new RegExp('s$', 'gi'),
+    common: new RegExp('$', 'gi'),
   },
 };
 
@@ -445,36 +445,36 @@ const pluralRules: [RegExp, string?][] = [
   [regex.plural.genera],
 
   // original rule
-  [regex.singular.man, "$1en"],
-  [regex.singular.person, "$1ople"],
-  [regex.singular.child, "$1ren"],
-  [regex.singular.drive, "$1s"],
-  [regex.singular.ox, "$1en"],
-  [regex.singular.axis, "$1es"],
-  [regex.singular.octopus, "$1uses"],
-  [regex.singular.alias, "$1es"],
-  [regex.singular.summons, "$1es"],
-  [regex.singular.bus, "$1ses"],
-  [regex.singular.buffalo, "$1oes"],
-  [regex.singular.tium, "$1a"],
-  [regex.singular.sis, "ses"],
-  [regex.singular.ffe, "$1$2ves"],
-  [regex.singular.hive, "$1ves"],
-  [regex.singular.aeiouyy, "$1ies"],
-  [regex.singular.matrix, "$1ices"],
-  [regex.singular.vertex, "$1ices"],
-  [regex.singular.x, "$1es"],
-  [regex.singular.mouse, "$1ice"],
-  [regex.singular.foot, "feet"],
-  [regex.singular.tooth, "teeth"],
-  [regex.singular.goose, "geese"],
-  [regex.singular.quiz, "$1zes"],
-  [regex.singular.whereas, "$1es"],
-  [regex.singular.criterion, "$1a"],
-  [regex.singular.genus, "genera"],
+  [regex.singular.man, '$1en'],
+  [regex.singular.person, '$1ople'],
+  [regex.singular.child, '$1ren'],
+  [regex.singular.drive, '$1s'],
+  [regex.singular.ox, '$1en'],
+  [regex.singular.axis, '$1es'],
+  [regex.singular.octopus, '$1uses'],
+  [regex.singular.alias, '$1es'],
+  [regex.singular.summons, '$1es'],
+  [regex.singular.bus, '$1ses'],
+  [regex.singular.buffalo, '$1oes'],
+  [regex.singular.tium, '$1a'],
+  [regex.singular.sis, 'ses'],
+  [regex.singular.ffe, '$1$2ves'],
+  [regex.singular.hive, '$1ves'],
+  [regex.singular.aeiouyy, '$1ies'],
+  [regex.singular.matrix, '$1ices'],
+  [regex.singular.vertex, '$1ices'],
+  [regex.singular.x, '$1es'],
+  [regex.singular.mouse, '$1ice'],
+  [regex.singular.foot, 'feet'],
+  [regex.singular.tooth, 'teeth'],
+  [regex.singular.goose, 'geese'],
+  [regex.singular.quiz, '$1zes'],
+  [regex.singular.whereas, '$1es'],
+  [regex.singular.criterion, '$1a'],
+  [regex.singular.genus, 'genera'],
 
-  [regex.singular.s, "s"],
-  [regex.singular.common, "s"],
+  [regex.singular.s, 's'],
+  [regex.singular.common, 's'],
 ];
 
 /**
@@ -510,81 +510,81 @@ const singularRules: [RegExp, string?][] = [
   [regex.singular.genus],
 
   // original rule
-  [regex.plural.men, "$1an"],
-  [regex.plural.people, "$1rson"],
-  [regex.plural.children, "$1"],
-  [regex.plural.databases, "$1"],
-  [regex.plural.drives, "$1"],
-  [regex.plural.genera, "genus"],
-  [regex.plural.criteria, "$1on"],
-  [regex.plural.tia, "$1um"],
-  [regex.plural.analyses, "$1$2sis"],
-  [regex.plural.hives, "$1ve"],
-  [regex.plural.curves, "$1"],
-  [regex.plural.lrves, "$1f"],
-  [regex.plural.aves, "$1ve"],
-  [regex.plural.foves, "$1fe"],
-  [regex.plural.movies, "$1ovie"],
-  [regex.plural.aeiouyies, "$1y"],
-  [regex.plural.series, "$1eries"],
-  [regex.plural.xes, "$1"],
-  [regex.plural.mice, "$1ouse"],
-  [regex.plural.buses, "$1"],
-  [regex.plural.oes, "$1"],
-  [regex.plural.shoes, "$1"],
-  [regex.plural.crises, "$1is"],
-  [regex.plural.octopuses, "$1us"],
-  [regex.plural.aliases, "$1"],
-  [regex.plural.summonses, "$1"],
-  [regex.plural.oxen, "$1"],
-  [regex.plural.matrices, "$1ix"],
-  [regex.plural.vertices, "$1ex"],
-  [regex.plural.feet, "foot"],
-  [regex.plural.teeth, "tooth"],
-  [regex.plural.geese, "goose"],
-  [regex.plural.quizzes, "$1"],
-  [regex.plural.whereases, "$1"],
+  [regex.plural.men, '$1an'],
+  [regex.plural.people, '$1rson'],
+  [regex.plural.children, '$1'],
+  [regex.plural.databases, '$1'],
+  [regex.plural.drives, '$1'],
+  [regex.plural.genera, 'genus'],
+  [regex.plural.criteria, '$1on'],
+  [regex.plural.tia, '$1um'],
+  [regex.plural.analyses, '$1$2sis'],
+  [regex.plural.hives, '$1ve'],
+  [regex.plural.curves, '$1'],
+  [regex.plural.lrves, '$1f'],
+  [regex.plural.aves, '$1ve'],
+  [regex.plural.foves, '$1fe'],
+  [regex.plural.movies, '$1ovie'],
+  [regex.plural.aeiouyies, '$1y'],
+  [regex.plural.series, '$1eries'],
+  [regex.plural.xes, '$1'],
+  [regex.plural.mice, '$1ouse'],
+  [regex.plural.buses, '$1'],
+  [regex.plural.oes, '$1'],
+  [regex.plural.shoes, '$1'],
+  [regex.plural.crises, '$1is'],
+  [regex.plural.octopuses, '$1us'],
+  [regex.plural.aliases, '$1'],
+  [regex.plural.summonses, '$1'],
+  [regex.plural.oxen, '$1'],
+  [regex.plural.matrices, '$1ix'],
+  [regex.plural.vertices, '$1ex'],
+  [regex.plural.feet, 'foot'],
+  [regex.plural.teeth, 'tooth'],
+  [regex.plural.geese, 'goose'],
+  [regex.plural.quizzes, '$1'],
+  [regex.plural.whereases, '$1'],
 
-  [regex.plural.ss, "ss"],
-  [regex.plural.s, ""],
+  [regex.plural.ss, 'ss'],
+  [regex.plural.s, ''],
 ];
 
 /**
  * @description This is a list of words that should not be capitalized for title case.
  */
 const nonTitlecasedWords = [
-  "and",
-  "or",
-  "nor",
-  "a",
-  "an",
-  "the",
-  "so",
-  "but",
-  "to",
-  "of",
-  "at",
-  "by",
-  "from",
-  "into",
-  "on",
-  "onto",
-  "off",
-  "out",
-  "in",
-  "over",
-  "with",
-  "for",
+  'and',
+  'or',
+  'nor',
+  'a',
+  'an',
+  'the',
+  'so',
+  'but',
+  'to',
+  'of',
+  'at',
+  'by',
+  'from',
+  'into',
+  'on',
+  'onto',
+  'off',
+  'out',
+  'in',
+  'over',
+  'with',
+  'for',
 ];
 
 /**
  * @description These are regular expressions used for converting between String formats.
  */
-const idSuffix = new RegExp("(_ids|_id)$", "g");
-const underbar = new RegExp("_", "g");
-const spaceOrUnderbar = new RegExp("[ _]", "g");
-const uppercase = new RegExp("([A-Z])", "g");
-const underbarPrefix = new RegExp("^_");
+const idSuffix = new RegExp('(_ids|_id)$', 'g');
+const underbar = new RegExp('_', 'g');
+const spaceOrUnderbar = new RegExp('[ _]', 'g');
+const uppercase = new RegExp('([A-Z])', 'g');
+const underbarPrefix = new RegExp('^_');
 
 /**
  * A helper method that applies rules based replacement to a String.
@@ -749,12 +749,12 @@ export function inflect(
  *     inflection.camelize( 'message_properties', true ); // === 'messageProperties'
  */
 export function camelize(str: string, lowFirstLetter?: boolean) {
-  const strPath = str.split("/");
+  const strPath = str.split('/');
   const j = strPath.length;
   let strArr: string[], k: number, l: number, first: string;
 
   for (let i = 0; i < j; i++) {
-    strArr = strPath[i].split("_");
+    strArr = strPath[i].split('_');
     k = 0;
     l = strArr.length;
 
@@ -771,10 +771,10 @@ export function camelize(str: string, lowFirstLetter?: boolean) {
       strArr[k] = first + strArr[k].substring(1);
     }
 
-    strPath[i] = strArr.join("");
+    strPath[i] = strArr.join('');
   }
 
-  return strPath.join("::");
+  return strPath.join('::');
 }
 
 /**
@@ -795,15 +795,15 @@ export function camelize(str: string, lowFirstLetter?: boolean) {
 export function underscore(str: string, allUpperCase?: boolean) {
   if (allUpperCase && str === str.toUpperCase()) return str;
 
-  const strPath = str.split("::");
+  const strPath = str.split('::');
   const j = strPath.length;
 
   for (let i = 0; i < j; i++) {
-    strPath[i] = strPath[i].replace(uppercase, "_$1");
-    strPath[i] = strPath[i].replace(underbarPrefix, "");
+    strPath[i] = strPath[i].replace(uppercase, '_$1');
+    strPath[i] = strPath[i].replace(underbarPrefix, '');
   }
 
-  return strPath.join("/").toLowerCase();
+  return strPath.join('/').toLowerCase();
 }
 
 /**
@@ -821,8 +821,8 @@ export function underscore(str: string, allUpperCase?: boolean) {
  */
 export function humanize(str: string, lowFirstLetter?: boolean) {
   str = str.toLowerCase();
-  str = str.replace(idSuffix, "");
-  str = str.replace(underbar, " ");
+  str = str.replace(idSuffix, '');
+  str = str.replace(underbar, ' ');
 
   if (!lowFirstLetter) {
     str = capitalize(str);
@@ -860,7 +860,7 @@ export function capitalize(str: string) {
  *     inflection.dasherize( 'Message Properties' ); // === 'Message-Properties'
  */
 export function dasherize(str: string) {
-  return str.replace(spaceOrUnderbar, "-");
+  return str.replace(spaceOrUnderbar, '-');
 }
 
 /**
@@ -875,13 +875,13 @@ export function dasherize(str: string) {
  *     inflection.titleize( 'message properties to keep' ); // === 'Message Properties to Keep'
  */
 export function titleize(str: string) {
-  str = str.toLowerCase().replace(underbar, " ");
-  const strArr = str.split(" ");
+  str = str.toLowerCase().replace(underbar, ' ');
+  const strArr = str.split(' ');
   const j = strArr.length;
   let d: string[], l: number;
 
   for (let i = 0; i < j; i++) {
-    d = strArr[i].split("-");
+    d = strArr[i].split('-');
     l = d.length;
 
     for (let k = 0; k < l; k++) {
@@ -890,10 +890,10 @@ export function titleize(str: string) {
       }
     }
 
-    strArr[i] = d.join("-");
+    strArr[i] = d.join('-');
   }
 
-  str = strArr.join(" ");
+  str = strArr.join(' ');
   str = str.substring(0, 1).toUpperCase() + str.substring(1);
 
   return str;
@@ -910,7 +910,7 @@ export function titleize(str: string) {
  *     inflection.demodulize( 'Message::Bus::Properties' ); // === 'Properties'
  */
 export function demodulize(str: string) {
-  const strArr = str.split("::");
+  const strArr = str.split('::');
 
   return strArr[strArr.length - 1];
 }
@@ -964,7 +964,7 @@ export function classify(str: string) {
    */
 export function foreignKey(str: string, dropIdUbar?: boolean) {
   str = demodulize(str);
-  str = underscore(str) + (dropIdUbar ? "" : "_") + "id";
+  str = underscore(str) + (dropIdUbar ? '' : '_') + 'id';
 
   return str;
 }
@@ -980,7 +980,7 @@ export function foreignKey(str: string, dropIdUbar?: boolean) {
  *     inflection.ordinalize( 'the 1 pitch' ); // === 'the 1st pitch'
  */
 export function ordinalize(str: string) {
-  const strArr = str.split(" ");
+  const strArr = str.split(' ');
   const j = strArr.length;
 
   for (let i = 0; i < j; i++) {
@@ -989,15 +989,15 @@ export function ordinalize(str: string) {
     if (!isNaN(k)) {
       const ltd = strArr[i].substring(strArr[i].length - 2);
       const ld = strArr[i].substring(strArr[i].length - 1);
-      let suf = "th";
+      let suf = 'th';
 
-      if (ltd != "11" && ltd != "12" && ltd != "13") {
-        if (ld === "1") {
-          suf = "st";
-        } else if (ld === "2") {
-          suf = "nd";
-        } else if (ld === "3") {
-          suf = "rd";
+      if (ltd != '11' && ltd != '12' && ltd != '13') {
+        if (ld === '1') {
+          suf = 'st';
+        } else if (ld === '2') {
+          suf = 'nd';
+        } else if (ld === '3') {
+          suf = 'rd';
         }
       }
 
@@ -1005,7 +1005,7 @@ export function ordinalize(str: string) {
     }
   }
 
-  return strArr.join(" ");
+  return strArr.join(' ');
 }
 
 const transformFunctions = {
