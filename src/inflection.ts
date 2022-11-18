@@ -604,21 +604,19 @@ function applyRules(
   override?: string
 ) {
   if (override) {
-    str = override;
+    return override;
   } else {
-    const ignore = skip.indexOf(str.toLocaleLowerCase()) > -1;
+    if (skip.includes(str.toLocaleLowerCase())) {
+      return str;
+    }
 
-    if (!ignore) {
-      const j = rules.length;
-
-      for (let i = 0; i < j; i++) {
-        if (str.match(rules[i][0])) {
-          const replaceRule = rules[i][1];
-          if (replaceRule !== undefined) {
-            str = str.replace(rules[i][0], replaceRule);
-          }
-          break;
+    for (const rule of rules) {
+      if (str.match(rule[0])) {
+        if (rule[1] !== undefined) {
+          return str.replace(rule[0], rule[1]);
         }
+
+        return str;
       }
     }
   }
