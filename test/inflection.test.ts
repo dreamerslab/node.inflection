@@ -1,13 +1,6 @@
 import * as inflection from "../src/inflection";
 import { describe, it, expect } from "vitest";
 
-describe("test .indexOf", function () {
-  it("should return proper index key", function () {
-    expect(inflection.indexOf(["hi", "there"], "guys")).toEqual(-1);
-    expect(inflection.indexOf(["hi", "there"], "hi")).toEqual(0);
-  });
-});
-
 describe("test .pluralize", function () {
   it("should pluralize the given word", function () {
     expect(inflection.pluralize("people")).toEqual("people");

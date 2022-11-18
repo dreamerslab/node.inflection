@@ -606,7 +606,7 @@ function applyRules(
   if (override) {
     str = override;
   } else {
-    const ignore = indexOf(skip, str.toLowerCase()) > -1;
+    const ignore = skip.indexOf(str.toLocaleLowerCase()) > -1;
 
     if (!ignore) {
       const j = rules.length;
@@ -624,42 +624,6 @@ function applyRules(
   }
 
   return str;
-}
-
-/**
- * This lets us detect if an Array contains a given element.
- * @param arr The subject array.
- * @param item Object to locate in the Array.
- * @param fromIndex Starts checking from this position in the Array.(optional)
- * @param compareFunc Function used to compare Array item vs passed item.(optional)
- * @returns Return index position in the Array of the passed item.
- * @example
- *
- *     const inflection = require( 'inflection' );
- *
- *     inflection.indexOf([ 'hi','there' ], 'guys' ); // === -1
- *     inflection.indexOf([ 'hi','there' ], 'hi' ); // === 0
- */
-export function indexOf<T>(
-  arr: T[],
-  item: T,
-  fromIndex?: number,
-  compareFunc?: (el: T, arg1: T) => boolean
-) {
-  if (!fromIndex) {
-    fromIndex = -1;
-  }
-
-  let index = -1;
-
-  for (let i = fromIndex; i < arr.length; i++) {
-    if (arr[i] === item || (compareFunc && compareFunc(arr[i], item))) {
-      index = i;
-      break;
-    }
-  }
-
-  return index;
 }
 
 /**
@@ -885,7 +849,7 @@ export function titleize(str: string) {
     l = d.length;
 
     for (let k = 0; k < l; k++) {
-      if (indexOf(nonTitlecasedWords, d[k].toLowerCase()) < 0) {
+      if (nonTitlecasedWords.indexOf(d[k].toLowerCase()) < 0) {
         d[k] = capitalize(d[k]);
       }
     }

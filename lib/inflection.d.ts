@@ -7,21 +7,6 @@
  * A port of inflection-js to node.js module.
  */
 /**
- * This lets us detect if an Array contains a given element.
- * @param arr The subject array.
- * @param item Object to locate in the Array.
- * @param fromIndex Starts checking from this position in the Array.(optional)
- * @param compareFunc Function used to compare Array item vs passed item.(optional)
- * @returns Return index position in the Array of the passed item.
- * @example
- *
- *     const inflection = require( 'inflection' );
- *
- *     inflection.indexOf([ 'hi','there' ], 'guys' ); // === -1
- *     inflection.indexOf([ 'hi','there' ], 'hi' ); // === 0
- */
-export declare function indexOf<T>(arr: T[], item: T, fromIndex?: number, compareFunc?: (el: T, arg1: T) => boolean): number;
-/**
  * This function adds pluralization support to every String object.
  * @param str The subject string.
  * @param plural Overrides normal output with said String.(optional)
