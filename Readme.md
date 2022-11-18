@@ -1,12 +1,12 @@
 # inflection
 
-A port of inflection-js to node.js module
+A package to transform english strings into other forms like the plural form, singular form, camelCase form, etc.
 
 <a href="https://www.npmjs.com/package/inflection"><img src="https://img.shields.io/npm/v/inflection" alt="NPM Version" /></a>
 
 
 ## Description
-[inflection-js](http://code.google.com/p/inflection-js/) is a port of the functionality from Ruby on Rails' Active Support Inflection classes into Javascript. `inflection` is a port of `inflection-js` to node.js npm package. Instead of [extending JavaScript native](http://wonko.com/post/extending-javascript-natives) String object like `inflection-js` does, `inflection` separate the methods to a independent package to avoid unexpected behaviors.
+This package was originally a port of [inflection-js](http://code.google.com/p/inflection-js/), which is a port of the functionality from Ruby on Rails' Active Support Inflection classes into Javascript.
 
 Note: This library uses [Wiktionary](http://en.wiktionary.org) as its reference.
 
@@ -40,7 +40,6 @@ Install inflection through npm
 
 ## API
 
-- inflection.indexOf( arr, item, from_index, compare_func );
 - inflection.pluralize( str, plural );
 - inflection.singularize( str, singular );
 - inflection.inflect( str, count, singular, plural );
@@ -63,42 +62,7 @@ Install inflection through npm
 
 > Require the module before using
 
-	var inflection = require( 'inflection' );
-
-
-
-### inflection.indexOf( arr, item, from_index, compare_func );
-
-This lets us detect if an Array contains a given element.
-
-#### Arguments
-
-> arr
-
-	type: Array
-	desc: The subject array.
-
-> item
-
-	type: Object
-	desc: Object to locate in the Array.
-
-> from_index
-
-	type: Number
-	desc: Starts checking from this position in the Array.(optional)
-
-> compare_func
-
-	type: Function
-	desc: Function used to compare Array item vs passed item.(optional)
-
-#### Example code
-
-	var inflection = require( 'inflection' );
-
-	inflection.indexOf([ 'hi','there' ], 'guys' ); // === -1
-	inflection.indexOf([ 'hi','there' ], 'hi' ); // === 0
+	const inflection = require( 'inflection' );
 
 
 
