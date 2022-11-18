@@ -1,11 +1,5 @@
-import inflection from "../lib/inflection";
+import * as inflection from "../src/inflection";
 import { describe, it, expect } from "vitest";
-
-describe("test .version", function () {
-  it("should match proper version format", function () {
-    expect(inflection.version).toMatch(/^\d+\.\d+\.\d+$/);
-  });
-});
 
 describe("test .indexOf", function () {
   it("should return proper index key", function () {
@@ -149,7 +143,6 @@ describe("test .inflect", function () {
     expect(inflection.inflect("meta", 1)).toEqual("metum");
     expect(inflection.inflect("guys", 1, "person", "people")).toEqual("person");
     // not a number should return original value
-    expect(inflection.inflect("original", "not a number")).toEqual("original");
     expect(inflection.inflect("drive", 1)).toEqual("drive");
     expect(inflection.inflect("drives", 1)).toEqual("drive");
     // decimal numbers should use plural state
@@ -271,12 +264,12 @@ describe("test .classify", function () {
   });
 });
 
-describe("test .foreign_key", function () {
-  it("should transform the given word to foreign_key", function () {
-    expect(inflection.foreign_key("MessageBusProperty")).toEqual(
+describe("test .foreignKey", function () {
+  it("should transform the given word to foreignKey", function () {
+    expect(inflection.foreignKey("MessageBusProperty")).toEqual(
       "message_bus_property_id"
     );
-    expect(inflection.foreign_key("MessageBusProperty", true)).toEqual(
+    expect(inflection.foreignKey("MessageBusProperty", true)).toEqual(
       "message_bus_propertyid"
     );
   });
@@ -293,9 +286,7 @@ describe("test .transform", function () {
     expect(inflection.transform("all job", ["pluralize", "dasherize"])).toEqual(
       "all-jobs"
     );
-    expect(
-      inflection.transform("all job", ["pluralize", "anInvalidMethod"])
-    ).toEqual("all jobs");
+    expect(inflection.transform("all job", ["pluralize"])).toEqual("all jobs");
     expect(
       inflection.transform("all job", ["capitalize", "pluralize", "dasherize"])
     ).toEqual("All-jobs");
