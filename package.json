@@ -96,6 +96,7 @@
     "vitest": "^0.25.2"
   },
   "main": "./lib/inflection.js",
+  "types": "./lib/inflection.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/dreamerslab/node.inflection.git"
