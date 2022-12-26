@@ -1,6 +1,6 @@
 {
   "name": "inflection",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A port of inflection-js to node.js module",
   "keywords": [
     "inflection",
