@@ -597,27 +597,18 @@ const underbarPrefix = new RegExp('^_');
  *
  *     applyRules( 'cows', singular_rules ); // === 'cow'
  */
-function applyRules(
-  str: string,
-  rules: [RegExp, string?][],
-  skip: string[],
-  override?: string
-) {
-  if (override) {
-    return override;
-  } else {
-    if (skip.includes(str.toLocaleLowerCase())) {
-      return str;
-    }
+function applyRules(str: string, rules: [RegExp, string?][], skip: string[]) {
+  if (skip.includes(str.toLocaleLowerCase())) {
+    return str;
+  }
 
-    for (const rule of rules) {
-      if (str.match(rule[0])) {
-        if (rule[1] !== undefined) {
-          return str.replace(rule[0], rule[1]);
-        }
-
-        return str;
+  for (const rule of rules) {
+    if (str.match(rule[0])) {
+      if (rule[1] !== undefined) {
+        return str.replace(rule[0], rule[1]);
       }
+
+      return str;
     }
   }
 
@@ -636,10 +627,9 @@ function applyRules(
  *     inflection.pluralize( 'person' ); // === 'people'
  *     inflection.pluralize( 'octopus' ); // === 'octopuses'
  *     inflection.pluralize( 'Hat' ); // === 'Hats'
- *     inflection.pluralize( 'person', 'guys' ); // === 'guys'
  */
-export function pluralize(str: string, plural?: string) {
-  return applyRules(str, pluralRules, uncountableWords, plural);
+export function pluralize(str: string) {
+  return applyRules(str, pluralRules, uncountableWords);
 }
 
 /**
@@ -654,10 +644,9 @@ export function pluralize(str: string, plural?: string) {
  *     inflection.singularize( 'people' ); // === 'person'
  *     inflection.singularize( 'octopuses' ); // === 'octopus'
  *     inflection.singularize( 'Hats' ); // === 'Hat'
- *     inflection.singularize( 'guys', 'person' ); // === 'person'
  */
-export function singularize(str: string, singular?: string) {
-  return applyRules(str, singularRules, uncountableWords, singular);
+export function singularize(str: string) {
+  return applyRules(str, singularRules, uncountableWords);
 }
 
 /**
@@ -679,20 +668,14 @@ export function singularize(str: string, singular?: string) {
  *     inflection.inflect( 'person', 2 ); // === 'people'
  *     inflection.inflect( 'octopus', 2 ); // === 'octopuses'
  *     inflection.inflect( 'Hat', 2 ); // === 'Hats'
- *     inflection.inflect( 'person', 2, null, 'guys' ); // === 'guys'
  */
-export function inflect(
-  str: string,
-  count: number,
-  singular?: string,
-  plural?: string
-) {
+export function inflect(str: string, count: number) {
   if (isNaN(count)) return str;
 
   if (count === 1) {
-    return applyRules(str, singularRules, uncountableWords, singular);
+    return applyRules(str, singularRules, uncountableWords);
   } else {
-    return applyRules(str, pluralRules, uncountableWords, plural);
+    return applyRules(str, pluralRules, uncountableWords);
   }
 }
 

@@ -31,7 +31,6 @@ describe("test .pluralize", function () {
     expect(inflection.pluralize("meta")).toEqual("meta");
     expect(inflection.pluralize("summons")).toEqual("summonses");
     expect(inflection.pluralize("whereas")).toEqual("whereases");
-    expect(inflection.pluralize("person", "guys")).toEqual("guys");
     expect(inflection.pluralize("index")).toEqual("indices");
     expect(inflection.pluralize("matrix")).toEqual("matrices");
     expect(inflection.pluralize("vertex")).toEqual("vertices");
@@ -81,7 +80,6 @@ describe("test .singularize", function () {
     expect(inflection.singularize("data")).toEqual("datum");
     expect(inflection.singularize("meta")).toEqual("metum");
     expect(inflection.singularize("whereases")).toEqual("whereas");
-    expect(inflection.singularize("guys", "person")).toEqual("person");
     expect(inflection.singularize("matrices")).toEqual("matrix");
     expect(inflection.singularize("vertices")).toEqual("vertex");
     expect(inflection.singularize("canvases")).toEqual("canvas");
@@ -109,7 +107,6 @@ describe("test .inflect", function () {
     expect(inflection.inflect("Hat", 0)).toEqual("Hats");
     expect(inflection.inflect("data", 0)).toEqual("data");
     expect(inflection.inflect("meta", 0)).toEqual("meta");
-    expect(inflection.inflect("person", 0, "guy", "guys")).toEqual("guys");
     expect(inflection.inflect("drive", 0)).toEqual("drives");
     // greater than 1 should use plural state
     expect(inflection.inflect("people", 2)).toEqual("people");
@@ -119,7 +116,6 @@ describe("test .inflect", function () {
     expect(inflection.inflect("Hat", 2)).toEqual("Hats");
     expect(inflection.inflect("data", 2)).toEqual("data");
     expect(inflection.inflect("meta", 2)).toEqual("meta");
-    expect(inflection.inflect("person", 2, "guy", "guys")).toEqual("guys");
     expect(inflection.inflect("drive", 2)).toEqual("drives");
     // 1 should use singular state
     expect(inflection.inflect("status", 1)).toEqual("status");
@@ -134,7 +130,6 @@ describe("test .inflect", function () {
     expect(inflection.inflect("Hats", 1)).toEqual("Hat");
     expect(inflection.inflect("data", 1)).toEqual("datum");
     expect(inflection.inflect("meta", 1)).toEqual("metum");
-    expect(inflection.inflect("guys", 1, "person", "people")).toEqual("person");
     // not a number should return original value
     expect(inflection.inflect("drive", 1)).toEqual("drive");
     expect(inflection.inflect("drives", 1)).toEqual("drive");
