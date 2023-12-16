@@ -18,9 +18,8 @@
  *     inflection.pluralize( 'person' ); // === 'people'
  *     inflection.pluralize( 'octopus' ); // === 'octopuses'
  *     inflection.pluralize( 'Hat' ); // === 'Hats'
- *     inflection.pluralize( 'person', 'guys' ); // === 'guys'
  */
-export declare function pluralize(str: string, plural?: string): string;
+export declare function pluralize(str: string): string;
 /**
  * This function adds singularization support to every String object.
  * @param str The subject string.
@@ -33,9 +32,8 @@ export declare function pluralize(str: string, plural?: string): string;
  *     inflection.singularize( 'people' ); // === 'person'
  *     inflection.singularize( 'octopuses' ); // === 'octopus'
  *     inflection.singularize( 'Hats' ); // === 'Hat'
- *     inflection.singularize( 'guys', 'person' ); // === 'person'
  */
-export declare function singularize(str: string, singular?: string): string;
+export declare function singularize(str: string): string;
 /**
  * This function will pluralize or singularlize a String appropriately based on a number value
  * @param str The subject string.
@@ -55,9 +53,8 @@ export declare function singularize(str: string, singular?: string): string;
  *     inflection.inflect( 'person', 2 ); // === 'people'
  *     inflection.inflect( 'octopus', 2 ); // === 'octopuses'
  *     inflection.inflect( 'Hat', 2 ); // === 'Hats'
- *     inflection.inflect( 'person', 2, null, 'guys' ); // === 'guys'
  */
-export declare function inflect(str: string, count: number, singular?: string, plural?: string): string;
+export declare function inflect(str: string, count: number): string;
 /**
  * This function adds camelization support to every String object.
  * @param str The subject string.
