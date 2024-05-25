@@ -1,9 +1,20 @@
 name: test
 on: [push, pull_request]
+permissions:
+  contents: read
+
 jobs:
   run-tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v1
+        with:
+          egress-policy: block
+          allowed-endpoints: >
+            github.com:443
+            registry.npmjs.org:443
+
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - run: npm install
