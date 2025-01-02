@@ -92,8 +92,8 @@
     }
   ],
   "devDependencies": {
-    "typescript": "^5.4.5",
-    "vitest": "^1.6.0"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   },
   "main": "./lib/inflection.js",
   "types": "./lib/inflection.d.ts",
