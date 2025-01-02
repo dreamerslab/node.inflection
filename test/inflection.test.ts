@@ -3,6 +3,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('test .pluralize', function () {
   it('should pluralize the given word', function () {
+    expect(inflection.pluralize('accommodation')).toEqual('accommodation');
     expect(inflection.pluralize('people')).toEqual('people');
     expect(inflection.pluralize('men')).toEqual('men');
     expect(inflection.pluralize('women')).toEqual('women');
@@ -16,6 +17,7 @@ describe('test .pluralize', function () {
     expect(inflection.pluralize('life')).toEqual('lives');
     expect(inflection.pluralize('bath')).toEqual('baths');
     expect(inflection.pluralize('calf')).toEqual('calves');
+    expect(inflection.pluralize('focus')).toEqual('focuses');
     expect(inflection.pluralize('foot')).toEqual('feet');
     expect(inflection.pluralize('book')).toEqual('books');
     expect(inflection.pluralize('goose')).toEqual('geese');
@@ -67,6 +69,7 @@ describe('test .singularize', function () {
     expect(inflection.singularize('baths')).toEqual('bath');
     expect(inflection.singularize('calves')).toEqual('calf');
     expect(inflection.singularize('feet')).toEqual('foot');
+    expect(inflection.singularize('focus')).toEqual('focus');
     expect(inflection.singularize('books')).toEqual('book');
     expect(inflection.singularize('geese')).toEqual('goose');
     expect(inflection.singularize('teeth')).toEqual('tooth');
