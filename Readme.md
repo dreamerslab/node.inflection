@@ -72,7 +72,7 @@ This function adds pluralization support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { pluralize } = require('inflection');
 
 pluralize('person'); // === 'people'
 pluralize('octopus'); // === "octopi"
@@ -98,7 +98,7 @@ This function adds singularization support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { singularize } = require('inflection');
 
 singularize('people'); // === 'person'
 singularize('octopi'); // === "octopus"
@@ -134,7 +134,7 @@ This function will pluralize or singularlize a String appropriately based on an 
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { inflect } = require('inflection');
 
 inflect('people', 1); // === 'person'
 inflect('octopi', 1); // === 'octopus'
@@ -164,7 +164,7 @@ This function transforms String object from underscore to camelcase.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { camelize } = require('inflection');
 
 camelize('message_properties'); // === 'MessageProperties'
 camelize('message_properties', true); // === 'messageProperties'
@@ -188,7 +188,7 @@ This function transforms String object from camelcase to underscore.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { underscore } = require('inflection');
 
 underscore('MessageProperties'); // === 'message_properties'
 underscore('messageProperties'); // === 'message_properties'
@@ -214,7 +214,7 @@ This function adds humanize support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { humanize } = require('inflection');
 
 humanize('message_properties'); // === 'Message properties'
 humanize('message_properties', true); // === 'message properties'
@@ -233,7 +233,7 @@ This function adds capitalization support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { capitalize } = require('inflection');
 
 capitalize('message_properties'); // === 'Message_properties'
 capitalize('message properties', true); // === 'Message properties'
@@ -252,7 +252,7 @@ This function replaces underscores with dashes in the string.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { dasherize } = require('inflection');
 
 dasherize('message_properties'); // === 'message-properties'
 dasherize('Message Properties'); // === 'Message-Properties'
@@ -271,7 +271,7 @@ This function adds titleize support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { titleize } = require('inflection');
 
 titleize('message_properties'); // === 'Message Properties'
 titleize('message properties to keep'); // === 'Message Properties to Keep'
@@ -290,7 +290,7 @@ This function adds demodulize support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { demodulize } = require('inflection');
 
 demodulize('Message::Bus::Properties'); // === 'Properties'
 ```
@@ -308,7 +308,7 @@ This function adds tableize support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { tableize } = require('inflection');
 
 tableize('MessageBusProperty'); // === 'message_bus_properties'
 ```
@@ -326,7 +326,7 @@ This function adds classification support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { classify } = require('inflection');
 
 classify('message_bus_properties'); // === 'MessageBusProperty'
 ```
@@ -349,7 +349,7 @@ This function adds foreign key support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { foreign_key } = require('inflection');
 
 foreign_key('MessageBusProperty'); // === 'message_bus_property_id'
 foreign_key('MessageBusProperty', true); // === 'message_bus_propertyid'
@@ -368,7 +368,7 @@ This function adds ordinalize support to every String object.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { ordinalize } = require('inflection');
 
 ordinalize('the 1 pitch'); // === 'the 1st pitch'
 ```
@@ -391,7 +391,7 @@ This function performs multiple inflection methods on a string.
 
 #### Example code
 ```js
-var inflection = require('inflection');
+const { transform } = require('inflection');
 
 transform('all job', [ 'pluralize', 'capitalize', 'dasherize' ]); // === 'All-jobs'
 ```
