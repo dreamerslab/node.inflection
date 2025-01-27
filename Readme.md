@@ -48,12 +48,6 @@ npm install inflection
 
 ## Usage
 
-> Require the module before using
-
-```js
-const inflection = require('inflection');
-```
-
 ### pluralize(str, plural)
 
 This function adds pluralization support to every String object.
