@@ -30,31 +30,31 @@ npm install inflection
 ```
 ## API
 
-- inflection.pluralize( str, plural );
-- inflection.singularize( str, singular );
-- inflection.inflect( str, count, singular, plural );
-- inflection.camelize( str, low_first_letter );
-- inflection.underscore( str, all_upper_case );
-- inflection.humanize( str, low_first_letter );
-- inflection.capitalize( str );
-- inflection.dasherize( str );
-- inflection.titleize( str );
-- inflection.demodulize( str );
-- inflection.tableize( str );
-- inflection.classify( str );
-- inflection.foreign_key( str, drop_id_ubar );
-- inflection.ordinalize( str );
-- inflection.transform( str, arr );
+- inflection.pluralize(str, plural);
+- inflection.singularize(str, singular);
+- inflection.inflect(str, count, singular, plural);
+- inflection.camelize(str, low_first_letter);
+- inflection.underscore(str, all_upper_case);
+- inflection.humanize(str, low_first_letter);
+- inflection.capitalize(str);
+- inflection.dasherize(str);
+- inflection.titleize(str);
+- inflection.demodulize(str);
+- inflection.tableize(str);
+- inflection.classify(str);
+- inflection.foreign_key(str, drop_id_ubar);
+- inflection.ordinalize(str);
+- inflection.transform(str, arr);
 
 ## Usage
 
 > Require the module before using
 
 ```js
-const inflection = require( 'inflection' );
+const inflection = require('inflection');
 ```
 
-### inflection.pluralize( str, plural );
+### inflection.pluralize(str, plural);
 
 This function adds pluralization support to every String object.
 
@@ -72,15 +72,15 @@ This function adds pluralization support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.pluralize( 'person' ); // === 'people'
-inflection.pluralize( 'octopus' ); // === "octopi"
-inflection.pluralize( 'Hat' ); // === 'Hats'
-inflection.pluralize( 'person', 'guys' ); // === 'guys'
+inflection.pluralize('person'); // === 'people'
+inflection.pluralize('octopus'); // === "octopi"
+inflection.pluralize('Hat'); // === 'Hats'
+inflection.pluralize('person', 'guys'); // === 'guys'
 ```
 
-### inflection.singularize( str, singular );
+### inflection.singularize(str, singular);
 
 This function adds singularization support to every String object.
 
@@ -98,15 +98,15 @@ This function adds singularization support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.singularize( 'people' ); // === 'person'
-inflection.singularize( 'octopi' ); // === "octopus"
-inflection.singularize( 'Hats' ); // === 'Hat'
-inflection.singularize( 'guys', 'person' ); // === 'person'
+inflection.singularize('people'); // === 'person'
+inflection.singularize('octopi'); // === "octopus"
+inflection.singularize('Hats'); // === 'Hat'
+inflection.singularize('guys', 'person'); // === 'person'
 ```
 
-### inflection.inflect( str, count, singular, plural );
+### inflection.inflect(str, count, singular, plural);
 
 This function will pluralize or singularlize a String appropriately based on an integer value.
 
@@ -134,19 +134,19 @@ This function will pluralize or singularlize a String appropriately based on an 
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.inflect( 'people', 1 ); // === 'person'
-inflection.inflect( 'octopi', 1 ); // === 'octopus'
-inflection.inflect( 'Hats', 1 ); // === 'Hat'
-inflection.inflect( 'guys', 1 , 'person' ); // === 'person'
-inflection.inflect( 'person', 2 ); // === 'people'
-inflection.inflect( 'octopus', 2 ); // === 'octopi'
-inflection.inflect( 'Hat', 2 ); // === 'Hats'
-inflection.inflect( 'person', 2, null, 'guys' ); // === 'guys'
+inflection.inflect('people', 1); // === 'person'
+inflection.inflect('octopi', 1); // === 'octopus'
+inflection.inflect('Hats', 1); // === 'Hat'
+inflection.inflect('guys', 1 , 'person'); // === 'person'
+inflection.inflect('person', 2); // === 'people'
+inflection.inflect('octopus', 2); // === 'octopi'
+inflection.inflect('Hat', 2); // === 'Hats'
+inflection.inflect('person', 2, null, 'guys'); // === 'guys'
 ```
 
-### inflection.camelize( str, low_first_letter );
+### inflection.camelize(str, low_first_letter);
 
 This function transforms String object from underscore to camelcase.
 
@@ -164,13 +164,13 @@ This function transforms String object from underscore to camelcase.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.camelize( 'message_properties' ); // === 'MessageProperties'
-inflection.camelize( 'message_properties', true ); // === 'messageProperties'
+inflection.camelize('message_properties'); // === 'MessageProperties'
+inflection.camelize('message_properties', true); // === 'messageProperties'
 ```
 
-### inflection.underscore( str, all_upper_case );
+### inflection.underscore(str, all_upper_case);
 
 This function transforms String object from camelcase to underscore.
 
@@ -188,15 +188,15 @@ This function transforms String object from camelcase to underscore.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.underscore( 'MessageProperties' ); // === 'message_properties'
-inflection.underscore( 'messageProperties' ); // === 'message_properties'
-inflection.underscore( 'MP' ); // === 'm_p'
-inflection.underscore( 'MP', true ); // === 'MP'
+inflection.underscore('MessageProperties'); // === 'message_properties'
+inflection.underscore('messageProperties'); // === 'message_properties'
+inflection.underscore('MP'); // === 'm_p'
+inflection.underscore('MP', true); // === 'MP'
 ```
 
-### inflection.humanize( str, low_first_letter );
+### inflection.humanize(str, low_first_letter);
 
 This function adds humanize support to every String object.
 
@@ -214,13 +214,13 @@ This function adds humanize support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.humanize( 'message_properties' ); // === 'Message properties'
-inflection.humanize( 'message_properties', true ); // === 'message properties'
+inflection.humanize('message_properties'); // === 'Message properties'
+inflection.humanize('message_properties', true); // === 'message properties'
 ```
 
-### inflection.capitalize( str );
+### inflection.capitalize(str);
 
 This function adds capitalization support to every String object.
 
@@ -233,13 +233,13 @@ This function adds capitalization support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.capitalize( 'message_properties' ); // === 'Message_properties'
-inflection.capitalize( 'message properties', true ); // === 'Message properties'
+inflection.capitalize('message_properties'); // === 'Message_properties'
+inflection.capitalize('message properties', true); // === 'Message properties'
 ```
 
-### inflection.dasherize( str );
+### inflection.dasherize(str);
 
 This function replaces underscores with dashes in the string.
 
@@ -252,13 +252,13 @@ This function replaces underscores with dashes in the string.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.dasherize( 'message_properties' ); // === 'message-properties'
-inflection.dasherize( 'Message Properties' ); // === 'Message-Properties'
+inflection.dasherize('message_properties'); // === 'message-properties'
+inflection.dasherize('Message Properties'); // === 'Message-Properties'
 ```
 
-### inflection.titleize( str );
+### inflection.titleize(str);
 
 This function adds titleize support to every String object.
 
@@ -271,13 +271,13 @@ This function adds titleize support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.titleize( 'message_properties' ); // === 'Message Properties'
-inflection.titleize( 'message properties to keep' ); // === 'Message Properties to Keep'
+inflection.titleize('message_properties'); // === 'Message Properties'
+inflection.titleize('message properties to keep'); // === 'Message Properties to Keep'
 ```
 
-### inflection.demodulize( str );
+### inflection.demodulize(str);
 
 This function adds demodulize support to every String object.
 
@@ -290,12 +290,12 @@ This function adds demodulize support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.demodulize( 'Message::Bus::Properties' ); // === 'Properties'
+inflection.demodulize('Message::Bus::Properties'); // === 'Properties'
 ```
 
-### inflection.tableize( str );
+### inflection.tableize(str);
 
 This function adds tableize support to every String object.
 
@@ -308,12 +308,12 @@ This function adds tableize support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.tableize( 'MessageBusProperty' ); // === 'message_bus_properties'
+inflection.tableize('MessageBusProperty'); // === 'message_bus_properties'
 ```
 
-### inflection.classify( str );
+### inflection.classify(str);
 
 This function adds classification support to every String object.
 
@@ -326,12 +326,12 @@ This function adds classification support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.classify( 'message_bus_properties' ); // === 'MessageBusProperty'
+inflection.classify('message_bus_properties'); // === 'MessageBusProperty'
 ```
 
-### inflection.foreign_key( str, drop_id_ubar );
+### inflection.foreign_key(str, drop_id_ubar);
 
 This function adds foreign key support to every String object.
 
@@ -349,13 +349,13 @@ This function adds foreign key support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.foreign_key( 'MessageBusProperty' ); // === 'message_bus_property_id'
-inflection.foreign_key( 'MessageBusProperty', true ); // === 'message_bus_propertyid'
+inflection.foreign_key('MessageBusProperty'); // === 'message_bus_property_id'
+inflection.foreign_key('MessageBusProperty', true); // === 'message_bus_propertyid'
 ```
 
-### inflection.ordinalize( str );
+### inflection.ordinalize(str);
 
 This function adds ordinalize support to every String object.
 
@@ -368,12 +368,12 @@ This function adds ordinalize support to every String object.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.ordinalize( 'the 1 pitch' ); // === 'the 1st pitch'
+inflection.ordinalize('the 1 pitch'); // === 'the 1st pitch'
 ```
 
-### inflection.transform( str, arr );
+### inflection.transform(str, arr);
 
 This function performs multiple inflection methods on a string.
 
@@ -391,9 +391,9 @@ This function performs multiple inflection methods on a string.
 
 #### Example code
 ```js
-var inflection = require( 'inflection' );
+var inflection = require('inflection');
 
-inflection.transform( 'all job', [ 'pluralize', 'capitalize', 'dasherize' ]); // === 'All-jobs'
+inflection.transform('all job', [ 'pluralize', 'capitalize', 'dasherize' ]); // === 'All-jobs'
 ```
 
 ## Credit
