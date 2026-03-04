@@ -805,7 +805,7 @@ export function humanize(str: string, lowFirstLetter?: boolean) {
  *     const inflection = require( 'inflection' );
  *
  *     inflection.capitalize( 'message_properties' ); // === 'Message_properties'
- *     inflection.capitalize( 'message properties', true ); // === 'Message properties'
+ *     inflection.capitalize( 'message properties' ); // === 'Message properties'
  */
 export function capitalize(str: string) {
   str = str.toLowerCase();
