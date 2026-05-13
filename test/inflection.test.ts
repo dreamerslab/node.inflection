@@ -47,6 +47,10 @@ describe('test .pluralize', function () {
     expect(inflection.pluralize('grammar')).toEqual('grammars');
     expect(inflection.pluralize('drive')).toEqual('drives');
     expect(inflection.pluralize('database')).toEqual('databases');
+    expect(inflection.pluralize('any')).toEqual('any');
+    expect(inflection.pluralize('aws')).toEqual('aws');
+    expect(inflection.pluralize('media')).toEqual('media');
+    expect(inflection.pluralize('police')).toEqual('police');
   });
 });
 
@@ -97,6 +101,10 @@ describe('test .singularize', function () {
     expect(inflection.singularize('grammars')).toEqual('grammar');
     expect(inflection.singularize('drives')).toEqual('drive');
     expect(inflection.singularize('databases')).toEqual('database');
+    expect(inflection.singularize('any')).toEqual('any');
+    expect(inflection.singularize('aws')).toEqual('aws');
+    expect(inflection.singularize('media')).toEqual('media');
+    expect(inflection.singularize('police')).toEqual('police');
   });
 });
 

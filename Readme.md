@@ -339,7 +339,7 @@ This function adds foreign key support to every String object.
 > low_first_letter
 
     type: Boolean
-    desc: Default is to seperate id with an underbar at the end of the class name, you can pass true to skip it.(optional)
+    desc: Default is to separate id with an underbar at the end of the class name, you can pass true to skip it.(optional)
 
 #### Example code
 ```js
