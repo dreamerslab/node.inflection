@@ -23,12 +23,14 @@ const uncountableWords = [
   'aircraft',
   'alcohol',
   'anger',
+  'any',
   'applause',
   'arithmetic',
   // 'art',
   'assistance',
   'athletics',
   // 'attention',
+  'aws',
 
   'bacon',
   'baggage',
@@ -184,6 +186,7 @@ const uncountableWords = [
   'mayonnaise',
   'measles',
   // 'meat',
+  'media',
   // 'metal',
   'methane',
   'milk',
@@ -213,6 +216,7 @@ const uncountableWords = [
   // 'permission',
   'physics',
   'poetry',
+  'police',
   'pollution',
   'poverty',
   // 'power',
@@ -917,7 +921,7 @@ export function classify(str: string) {
 /**
    * This function adds foreign key support to every String object.
    * @param str The subject string.
-   * @param dropIdUbar Default is to seperate id with an underbar at the end of the class name,
+   * @param dropIdUbar Default is to separate id with an underbar at the end of the class name,
                                  you can pass true to skip it.(optional)
    * @returns Underscored plural nouns become the camel cased singular form.
    * @example
