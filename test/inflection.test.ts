@@ -51,6 +51,9 @@ describe('test .pluralize', function () {
     expect(inflection.pluralize('aws')).toEqual('aws');
     expect(inflection.pluralize('media')).toEqual('media');
     expect(inflection.pluralize('police')).toEqual('police');
+    expect(inflection.pluralize('nucleus')).toEqual('nuclei');
+    expect(inflection.pluralize('nuclei')).toEqual('nuclei');
+    expect(inflection.pluralize('nucleuses')).toEqual('nucleuses');
   });
 });
 
@@ -105,6 +108,9 @@ describe('test .singularize', function () {
     expect(inflection.singularize('aws')).toEqual('aws');
     expect(inflection.singularize('media')).toEqual('media');
     expect(inflection.singularize('police')).toEqual('police');
+    expect(inflection.singularize('nuclei')).toEqual('nucleus');
+    expect(inflection.singularize('nucleuses')).toEqual('nucleus');
+    expect(inflection.singularize('nucleus')).toEqual('nucleus');
   });
 });
 
