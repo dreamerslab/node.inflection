@@ -111,6 +111,9 @@ describe('test .singularize', function () {
     expect(inflection.singularize('nuclei')).toEqual('nucleus');
     expect(inflection.singularize('nucleuses')).toEqual('nucleus');
     expect(inflection.singularize('nucleus')).toEqual('nucleus');
+    expect(inflection.singularize('analyses')).toEqual('analysis');
+    expect(inflection.singularize('bases')).toEqual('basis');
+    expect(inflection.singularize('diagnoses')).toEqual('diagnosis');
   });
 });
 
