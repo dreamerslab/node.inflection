@@ -534,7 +534,7 @@ const singularRules: [RegExp, string?][] = [
   [regex.plural.nuclei, '$1us'],
   [regex.plural.nucleuses, '$1us'],
   [regex.plural.tia, '$1um'],
-  [regex.plural.analyses, '$1$2sis'],
+  [regex.plural.analyses, '$1sis'],
   [regex.plural.hives, '$1ve'],
   [regex.plural.curves, '$1'],
   [regex.plural.lrves, '$1f'],
