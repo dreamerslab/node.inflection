@@ -54,6 +54,10 @@ describe('test .pluralize', function () {
     expect(inflection.pluralize('nucleus')).toEqual('nuclei');
     expect(inflection.pluralize('nuclei')).toEqual('nuclei');
     expect(inflection.pluralize('nucleuses')).toEqual('nucleuses');
+    expect(inflection.pluralize('gas')).toEqual('gases');
+    expect(inflection.pluralize('gases')).toEqual('gases');
+    expect(inflection.pluralize('lens')).toEqual('lenses');
+    expect(inflection.pluralize('lenses')).toEqual('lenses');
   });
 });
 
@@ -114,6 +118,21 @@ describe('test .singularize', function () {
     expect(inflection.singularize('analyses')).toEqual('analysis');
     expect(inflection.singularize('bases')).toEqual('basis');
     expect(inflection.singularize('diagnoses')).toEqual('diagnosis');
+    // regular -s nouns whose plural ends in -ses (issue #123)
+    expect(inflection.singularize('gases')).toEqual('gas');
+    expect(inflection.singularize('lenses')).toEqual('lens');
+    expect(inflection.singularize('gas')).toEqual('gas');
+    expect(inflection.singularize('lens')).toEqual('lens');
+    // singularize(pluralize(x)) === x round-trip
+    expect(inflection.singularize(inflection.pluralize('gas'))).toEqual('gas');
+    expect(inflection.singularize(inflection.pluralize('lens'))).toEqual('lens');
+    // must not regress: -ses plurals that are not the anchored class
+    expect(inflection.singularize('houses')).toEqual('house');
+    expect(inflection.singularize('buses')).toEqual('bus');
+    // must not over-protect: bare -gas/-s words that merely end in the stem
+    expect(inflection.singularize('sagas')).toEqual('saga');
+    expect(inflection.singularize('omegas')).toEqual('omega');
+    expect(inflection.singularize('cameras')).toEqual('camera');
   });
 });
 

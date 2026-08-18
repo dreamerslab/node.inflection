@@ -378,6 +378,7 @@ const regex = {
     genera: new RegExp('^genera$', 'gi'),
     nuclei: new RegExp('^(nucle)i$', 'gi'),
     nucleuses: new RegExp('^(nucle)uses$', 'gi'),
+    gases: new RegExp('^(gas|lens|bias|atlas|iris)es$', 'gi'),
     ss: new RegExp('ss$', 'gi'),
     s: new RegExp('s$', 'gi'),
   },
@@ -412,6 +413,7 @@ const regex = {
     criterion: new RegExp('^(criteri)on$', 'gi'),
     genus: new RegExp('^genus$', 'gi'),
     nucleus: new RegExp('^(nucle)us$', 'gi'),
+    gas: new RegExp('^(gas|lens|bias|atlas|iris)$', 'gi'),
     s: new RegExp('s$', 'gi'),
     common: new RegExp('$', 'gi'),
   },
@@ -453,6 +455,7 @@ const pluralRules: [RegExp, string?][] = [
   [regex.plural.genera],
   [regex.plural.nuclei],
   [regex.plural.nucleuses],
+  [regex.plural.gases],
 
   // original rule
   [regex.singular.man, '$1en'],
@@ -484,6 +487,7 @@ const pluralRules: [RegExp, string?][] = [
   [regex.singular.criterion, '$1a'],
   [regex.singular.genus, 'genera'],
   [regex.singular.nucleus, '$1i'],
+  [regex.singular.gas, '$1es'],
 
   [regex.singular.s, 's'],
   [regex.singular.common, 's'],
@@ -522,6 +526,7 @@ const singularRules: [RegExp, string?][] = [
   [regex.singular.criterion],
   [regex.singular.genus],
   [regex.singular.nucleus],
+  [regex.singular.gas],
 
   // original rule
   [regex.plural.men, '$1an'],
@@ -560,6 +565,7 @@ const singularRules: [RegExp, string?][] = [
   [regex.plural.geese, 'goose'],
   [regex.plural.quizzes, '$1'],
   [regex.plural.whereases, '$1'],
+  [regex.plural.gases, '$1'],
 
   [regex.plural.ss, 'ss'],
   [regex.plural.s, ''],
