@@ -339,7 +339,12 @@ const uncountableWords = [
 
 const regex = {
   plural: {
-    men: new RegExp('^(m|wom)en$', 'gi'),
+    men: new RegExp('(m|wom)en$', 'gi'),
+    // singular nouns that end in -men, not plurals of -man (specimen, omen)
+    menSingular: new RegExp(
+      '^(a|abdo|acu|agno|albu|bitu|catechu|ceru|cogno|cul|cycla|dol|dura|exa|fla|fora|grava|hy|legu|li|lu|no|nu|o|praeno|puta|regi|ru|se|speci|sta|teg|tegu|vela)men$',
+      'gi'
+    ),
     people: new RegExp('(pe)ople$', 'gi'),
     children: new RegExp('(child)ren$', 'gi'),
     tia: new RegExp('([ti])a$', 'gi'),
@@ -383,7 +388,12 @@ const regex = {
   },
 
   singular: {
-    man: new RegExp('^(m|wom)an$', 'gi'),
+    man: new RegExp('(m|wom)an$', 'gi'),
+    // nouns that end in -man but are not compounds of man (human, German)
+    manNonCompound: new RegExp(
+      '(?:^(?:ata|brah|cai|cay|des|dol|ger|het|mussul|nor|otto|ro|sha|talis|turko)|hu)man$',
+      'gi'
+    ),
     person: new RegExp('(pe)rson$', 'gi'),
     child: new RegExp('(child)$', 'gi'),
     drive: new RegExp('(drive)$', 'gi'),
@@ -418,6 +428,9 @@ const regex = {
 };
 
 const pluralRules: [RegExp, string?][] = [
+  [regex.plural.menSingular, '$&s'],
+  [regex.singular.manNonCompound, '$&s'],
+
   // do not replace if its already a plural word
   [regex.plural.men],
   [regex.plural.people],
@@ -494,6 +507,7 @@ const pluralRules: [RegExp, string?][] = [
  */
 const singularRules: [RegExp, string?][] = [
   // do not replace if its already a singular word
+  [regex.plural.menSingular],
   [regex.singular.man],
   [regex.singular.person],
   [regex.singular.child],
