@@ -55,6 +55,24 @@ describe('test .pluralize', function () {
     expect(inflection.pluralize('nuclei')).toEqual('nuclei');
     expect(inflection.pluralize('nucleuses')).toEqual('nucleuses');
   });
+
+  it('should pluralize compounds of man and woman', function () {
+    expect(inflection.pluralize('policeman')).toEqual('policemen');
+    expect(inflection.pluralize('Fireman')).toEqual('Firemen');
+    expect(inflection.pluralize('gentleman')).toEqual('gentlemen');
+    expect(inflection.pluralize('policewoman')).toEqual('policewomen');
+    expect(inflection.pluralize('policemen')).toEqual('policemen');
+    expect(inflection.pluralize('policewomen')).toEqual('policewomen');
+    // -man words that are not compounds of man
+    expect(inflection.pluralize('superhuman')).toEqual('superhumans');
+    expect(inflection.pluralize('German')).toEqual('Germans');
+    expect(inflection.pluralize('shaman')).toEqual('shamans');
+    expect(inflection.pluralize('talisman')).toEqual('talismans');
+    // singular nouns that end in -men
+    expect(inflection.pluralize('specimen')).toEqual('specimens');
+    expect(inflection.pluralize('omen')).toEqual('omens');
+    expect(inflection.pluralize('abdomen')).toEqual('abdomens');
+  });
 });
 
 describe('test .singularize', function () {
@@ -114,6 +132,21 @@ describe('test .singularize', function () {
     expect(inflection.singularize('analyses')).toEqual('analysis');
     expect(inflection.singularize('bases')).toEqual('basis');
     expect(inflection.singularize('diagnoses')).toEqual('diagnosis');
+  });
+
+  it('should singularize compounds of man and woman', function () {
+    expect(inflection.singularize('policemen')).toEqual('policeman');
+    expect(inflection.singularize('Firemen')).toEqual('Fireman');
+    expect(inflection.singularize('gentlemen')).toEqual('gentleman');
+    expect(inflection.singularize('policewomen')).toEqual('policewoman');
+    expect(inflection.singularize('policeman')).toEqual('policeman');
+    expect(inflection.singularize('superhumans')).toEqual('superhuman');
+    expect(inflection.singularize('shamans')).toEqual('shaman');
+    // singular nouns that end in -men
+    expect(inflection.singularize('specimen')).toEqual('specimen');
+    expect(inflection.singularize('specimens')).toEqual('specimen');
+    expect(inflection.singularize('omen')).toEqual('omen');
+    expect(inflection.singularize('regimen')).toEqual('regimen');
   });
 });
 
